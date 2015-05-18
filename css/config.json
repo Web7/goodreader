@@ -23,12 +23,12 @@
     "@font-size-base": "16px",
     "@font-size-large": "ceil((@font-size-base * 1.25))",
     "@font-size-small": "ceil((@font-size-base * 0.85))",
-    "@font-size-h1": "floor((@font-size-base * 2.6))",
-    "@font-size-h2": "floor((@font-size-base * 2.15))",
-    "@font-size-h3": "ceil((@font-size-base * 1.7))",
-    "@font-size-h4": "ceil((@font-size-base * 1.25))",
-    "@font-size-h5": "@font-size-base",
-    "@font-size-h6": "ceil((@font-size-base * 0.85))",
+    "@font-size-h1": "60px",
+    "@font-size-h2": "55px",
+    "@font-size-h3": "50px",
+    "@font-size-h4": "43px",
+    "@font-size-h5": "35px",
+    "@font-size-h6": "25px",
     "@line-height-base": "1.428571429",
     "@line-height-computed": "floor((@font-size-base * @line-height-base))",
     "@headings-font-family": "inherit",
@@ -426,5 +426,5 @@
     "scrollspy.js",
     "transition.js"
   ],
-  "customizerUrl": "http://getbootstrap.com/customize/?id=5877d4ed07bee0242e47"
+  "customizerUrl": "http://getbootstrap.com/customize/?id=f3b9aff96b2bb362d4d8"
 }
