@@ -2,9 +2,152 @@
 <html>
 <head lang="en">
 	<meta charset="UTF-8">
-	<title></title>
+	<title>Support</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/common.css" />
+	<script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body>
-
+<header>
+	<nav class="navbar navbar-default">
+		<div class="container">
+			<a class="gr-logo navbar-brand" href="/"></a>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#">About</a></li>
+				<li><a href="#">User Manual</a></li>
+				<li class="active"><a href="#">Support</a></li>
+				<li><a href="#">Related Products</a></li>
+				<li class="gr-social-icon"><a href="#">
+						<span class="fa-stack fa-lg">
+							<i class="fa fa-circle fa-stack-2x"></i>
+							<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+						</span>
+					</a>
+				</li>
+				<li class="gr-social-icon"><a href="#">
+						<span class="fa-stack fa-lg">
+							<i class="fa fa-circle fa-stack-2x"></i>
+							<i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+						</span>
+				</a></li>
+			</ul>
+		</div>
+	</nav>
+</header>
+<div class="container">
+	<h1 class="text-primary">Support</h1>
+	<form>
+		<div class="row">
+			<div class="col-lg-6 form-group">
+				<small>Error message</small>
+				<input type="text" class="form-control" placeholder="Your name (required)">
+			</div>
+			<div class="col-lg-6 form-group has-error">
+				<small>Error message</small>
+				<input type="text" class="form-control" placeholder="Your email address (required) - error condition">
+			</div>
+		</div>
+		<div class="form-group has-success">
+			<small>Error message</small>
+			<input type="text" class="form-control" placeholder="Subject (required) - active condition">
+		</div>
+		<div class="form-group">
+			<small>Error message</small>
+			<textarea class="form-control" placeholder="Message (required)" rows="7"></textarea>
+		</div>
+		<p>File Attachment</p>
+		<div class="row">
+			<div class="col-lg-4 form-group">
+				<small>Error message</small>
+				<input type="text" class="form-control" placeholder="" readonly>
+			</div>
+			<div class="col-lg-3 form-group gr-text-center">
+				<button class="btn btn-default">Choose File</button>
+			</div>
+		</div>
+		<div class="form-group gr-text-center">
+			<div class="g-recaptcha" data-sitekey="6LfYGgcTAAAAAPeZEr7N82khvQF1n3Hquz9o6NtJ"></div>
+		</div>
+		<div class="form-group gr-text-center">
+			<button class="btn btn-primary btn-lg">Send Email</button>
+		</div>
+	</form>
+</div>
+<div class="gr-footer">
+	<div class="container">
+		<div class="gr-row row">
+			<div class="col-lg-3">
+				<img src="images/logo-goodreader-footer.png" width="190" height="49" alt="" title="">
+				<div class="gr-social-footer">
+					<a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></a>
+					<a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a>
+				</div>
+				<div class="gr-subscribe">
+					<p>Subscribe</p>
+					<div class="gr-footer-form-group input-group">
+						<input class="form-control" type="text" placeholder="Your Email">
+						<span class="input-group-btn">
+							<button class="btn btn-default" type="button">
+								<i class="fa fa-chevron-circle-right"></i>
+							</button>
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-5">
+				<ul class="gr-footer-nav">
+					<li>
+						<a href="#">About</a>
+						<div class="gr-footer-nav__line"></div>
+						<ul>
+							<li><a href="#">Overview</a></li>
+							<li><a href="#">End User License Agreement (EULA)</a></li>
+							<li><a href="#">Updates History</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">User Manual</a>
+						<div class="gr-footer-nav__line"></div>
+						<ul>
+							<li><a href="#">Introduction</a></li>
+							<li><a href="#">How-Tos</a></li>
+							<li><a href="#">Viewing Files</a>
+								<ul>
+									<li><a href="#">PDF</a></li>
+									<li><a href="#">TXT</a></li>
+									<li><a href="#">Pictures</a></li>
+									<li><a href="#">Audio & Video</a></li>
+									<li><a href="#">Other Files</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Transferring Files to GoodReader</a>
+								<ul>
+									<li><a href="#">USB File Transfer (computer-to-iPhone)</a></li>
+									<li><a href="#">WiFi File Transfer (computer-to-iPhone)</a></li>
+									<li><a href="#">Web Downloads (Internet-to-iPhone)</a></li>
+									<li><a href="#">Accessing Servers, E-mail attachment</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Manage Files, Send E-mail</a></li>
+							<li><a href="#">Troublesho</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Support</a>
+						<div class="gr-footer-nav__line"></div>
+					</li>
+				</ul>
+			</div>
+			<div class="col-lg-4"></div>
+		</div>
+	</div>
+</div>
+<div class="gr-footer-copyright">
+	<div class="container">
+		Copyright © Yuri Selukoff, 2008-2015. All rights reserved.
+	</div>
+</div>
 </body>
 </html>
