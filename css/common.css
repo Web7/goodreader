@@ -19,10 +19,13 @@ textarea {resize: none;}
 
 .gr-logo {width: 190px; background: url(../images/logo-goodreader.png) no-repeat center center; background-size: contain;}
 
-.navbar {border-top: 0; border-bottom-width: 2px; border-radius: 0;}
+.navbar {border-top: 0; border-left: 0; border-right: 0; border-bottom-width: 2px; border-radius: 0;}
 
 .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {margin-left: 0;}
 .navbar-right {margin-right: 0;}
+
+.gr-mobile-menu {display: none; float: right; font-size: 26px; padding: 3px 0 0 0; cursor: pointer; color: #8d97a0;}
+.gr-mobile-menu:hover {text-decoration: none; color: #50aadf;}
 
 .has-success .form-control:focus,
 .has-success .form-control,
@@ -118,4 +121,13 @@ li.gr-social-icon > a .fa-stack-1x {font-size: 17px; line-height: 30px;}
 	.gr-text-center {text-align: center;}
 
 	.g-recaptcha {margin: 0 auto; width: 300px;}
+
+	.navbar {height: 34px; min-height: 34px; text-align: center;}
+	.navbar .navbar-brand {background-image: url(../images/logo-goodreader-mobile.png); width: 27px; height: 22px; padding: 31px 0 0 0; margin-right: -22px; float: none; display: inline-block;}
+	.navbar .nav {display: none;}
+	.gr-mobile-menu {display: inline-block;}
+
+	.gr-manual-menu {display: none;}
 }
+
+@media (max-width: 768px) {}
