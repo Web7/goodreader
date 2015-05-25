@@ -29,7 +29,10 @@
 		grShowShortText: 'gr-show-short-text',
 		grShowFullText: 'gr-show-full-text',
 		grTextHeight: 'gr-text-height',
-		grShowFullTextButton: 'gr-show-full-text-button'
+		grShowFullTextButton: 'gr-show-full-text-button',
+
+		grMobileMenu: 'gr-mobile-menu',
+		grOpenMenu: 'gr-open-menu'
 	};
 	var ids = {};
 
@@ -57,6 +60,8 @@
 		$btnScrollTo,
 		$grShowShortText,
 		$grTextHeight,
+		$grMobileMenu,
+		$body,
 		posGrUserManualMenu;
 
 	$(function(){
@@ -65,6 +70,8 @@
 		$grFooter = $(selectors.grFooter);
 		$grShowShortText = $(selectors.grShowShortText);
 		$grTextHeight = $(selectors.grTextHeight);
+		$grMobileMenu = $(selectors.grMobileMenu);
+		$body = $('body');
 
 		if ($grUserManualMenu.exists()) {
 			posGrUserManualMenu = $grUserManualMenu.offset();
@@ -78,6 +85,10 @@
 			});
 			$btnScrollTo.scrollToTop();
 		}
+
+		$grMobileMenu.on('click', function(){
+			$body.toggleClass(classNames.grOpenMenu);
+		});
 
 		gr.renderShowShortText();
 	});

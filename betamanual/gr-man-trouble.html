@@ -1,0 +1,349 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<meta http-equiv="content-language" content="en">
+    <title>goodreader.com :: products :: GoodReader :: Manual :: Troubleshooting</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="copyright" content="Copyright 2008 by Good.iWare">
+	<meta name="resource-type" content="document">
+	<meta name="distribution" content="global">
+	<link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<a id="top"></a>
+<table width="1000" border="0" cellpadding="0" cellspacing="0">
+	<tr><td><a href="index.html"><img src="/images/top.jpg" width="1000" height="122" alt="" border="0"></a></td></tr>
+	<tr><td bgcolor="#FFFFFF" width="100%" height="27">
+		<table width="100%" border="0" cellpadding="0" cellspacing="2px" style="color:#333333">
+			<tr>
+				<td width="154" height="27" align="center" bgcolor="#777777"><a class="menuLink" href="index.html">GoodReader</a></td>
+				<td width="154" height="27" align="center" bgcolor="#777777"><a class="menuLink" href="/support/" target="_blank">support</a></td>
+				<td>&nbsp;</td>
+			</tr>
+		</table>
+	</td></tr>
+	<tr><td>
+		<table border="0" cellpadding="0" cellspacing="0">
+			<tr>
+				<td valign="top" bgcolor="#FFFFFF" style="color:#333333">
+					<table width="158" align="center" border="0" cellpadding="0" cellspacing="0">
+						<tr><td height="17" class="contLeftMenuSubmenu1" style="font-size:12px">
+							<a class="menuLink" style="font-size:12px" href="index.html">Overview</a>
+						</td></tr>
+						<tr><td height="17" class="contLeftMenuSubmenu1" style="font-size:12px">
+							<a class="menuLink" style="font-size:12px" href="gr-man.html">User Manual</a>
+						</td></tr>
+						<tr><td height="17" class="contLeftMenuSubmenu2" style="font-size:12px">
+							<a class="menuLink" style="font-size:12px" href="gr-man-howto.html">How-Tos</a>
+						</td></tr>
+						<tr><td height="17" class="contLeftMenuSubmenu2" style="font-size:12px">
+							<a class="menuLink" style="font-size:12px" href="gr-man-tr-usb.html">USB File Transfer</a>
+						</td></tr>
+						<tr><td height="17" class="contLeftMenuSubmenu2" style="font-size:12px">
+							<a class="menuLink" style="font-size:12px" href="gr-man-tr-wifi.html">WiFi File Transfer</a>
+						</td></tr>
+						<tr><td height="17" class="contLeftMenuSubmenu2" style="font-size:12px">
+							Troubleshooting
+						</td></tr>
+					</table>
+				</td>
+				<td valign="top" bgcolor="#FFFFFF" class="content">
+					<table border="0" cellpadding="1" cellspacing="0">
+						<tr><td>
+							<table border="0" cellpadding="0" cellspacing="0">
+								<tr>
+									<td valign="top"><img src="/images/gr-icon-96.jpg" width="96" height="143" alt="" border="0"></td>
+									<td width="15">&nbsp;</td>
+									<td valign="top">
+										<p style="font-size:21px"><b>GoodReader User Manual</b></p>
+										<h2>Troubleshooting</h2>
+									</td>
+								</tr>
+							</table>
+						</td></tr>
+						<tr><td>&nbsp;</td></tr>
+						<tr><td><input type="button" onClick="javascript:history.go(-1)" value="&lt;&lt; Go back"></td></tr>
+						<tr><td>&nbsp;</td></tr>
+						<tr><td>
+							<!-- *******************************************************************
+							     *******************************************************************
+							     *******************************************************************
+							     *******************************************************************
+							     ******************************************************************* -->
+<a id="top"></a>
+
+<p><b>Transferring files</b></p>
+<p>Problem:</p>
+<p><a href="gr-man-tr-wifi-trouble.html">WiFi File Transfer doesn't work</a></p>
+<p><a href="#browserlinks">I use GoodReader's built-in web-browser and some links don't work when I tap them</a></p>
+<p><a href="#httpversion">I connect via WiFi using my web-browser and I see something like &quot;Error 501/505, HTTP version is not supported&quot;</a></p>
+<p><a href="#stopsyncing">I want to stop syncing a file or a folder, but can't delete the corresponding sync record</a></p>
+<p><a href="#smbnopwd">When connecting to a shared Windows folder, GoodReader is always denying an access and asking for a password, but I don't have a password set up on my Windows machine</a></p>
+<p>&nbsp;</p>
+
+<a id="toppdf"></a>
+<p><b>Viewing PDF files</b></p>
+<p>Problem:</p>
+<p><a href="#pdfclose">I cannot close a file, because navigation menu has disappeared</a></p>
+<p><a href="#pdfscans">Scanned images in my PDF files appear to be of a very low quality, although they're actually not</a></p>
+<p><a href="#pdfslowerthanbefore">PDF rendering and page turning became slower than it was before</a></p>
+<p><a href="#cantselecttext">I can't select a text to copy or to highlight it</a></p>
+<p><a href="#cantdeletehighlight">I accidentally highlighted a text, but can't find a way to remove a highlight</a></p>
+<p><a href="#annotsinmail">I annotated a PDF file, emailed it to someone else's iPhone/iPad, but that person can't see my annotations in Mail app</a></p>
+<p><a href="#flatannots">You say that iPhone/iPad's Mail app can't show PDF Annotations, but it correctly shows notes/drawings created in some other iPhone/iPad app</a></p>
+<p><a href="#missedrepair">When opening a PDF file for the first time I saw some message saying that this file is damaged, and there was an option to repair this file. I didn't use that option, and now I can't find the way to bring up that repairing message again.</a></p>
+<p><a href="#exclamation">I see red exclamation point at the bottom of a page, and zooming became less responsive</a></p>
+<p><a href="#pdfslowspeed">My PDF takes extremely long time to open or to render a page</a></p>
+<p><a href="#pdfasianfonts">Some characters (Asian, Arabic, special math symbols, etc.) in my PDFs are unreadable, but they appear correctly on my Mac/PC</a></p>
+<p><a href="#pdfreflownotext">I see the text on my PDF page, but PDF Reflow feature doesn't show this text</a></p>
+<p><a href="#pdfcantfindtext">I see the text on my PDF page, but PDF Find feature can't find it</a></p>
+<p><a href="#pdfreflowgibberish">I see the text on my PDF page, but PDF Reflow feature shows some unreadable characters instead of it</a></p>
+<p><a href="#pdfreflowrtl">My right-to-left reading PDF file (Hebrew, Arabic, etc.) is shown backwards in PDF Reflow mode</a></p>
+<p><a href="#pdffindrtl">I see the text in my right-to-left reading PDF file (Hebrew, Arabic, etc.), but PDF Find feature can't find it, although it does find it if I enter it backwards</a></p>
+<p><a href="#pdfunknownformat">GoodReader says that this PDF format is not recognized, but it shows fine on my Mac/PC</a></p>
+<p><a href="#pdfdisabledbltaps">I often find myself making accidental double-taps, when I don't mean to</a></p>
+<p><a href="#horlockdisabled">I'm unable to use Horizontal Scroll Lock feature, because the button is inaccessible (grayed out)</a></p>
+<p>&nbsp;</p>
+
+<p><b>Viewing TXT files</b></p>
+<p>Problem:</p>
+<p><a href="#pdfclose">I cannot close a file, because navigation menu has disappeared</a></p>
+<p><a href="#txtencoding">My TXT file shows unreadable characters instead of a real text</a></p>
+<p>&nbsp;</p>
+
+<p><b>Viewing other files</b></p>
+<p>Problem:</p>
+<p><a href="#pdfclose">I cannot close a file, because navigation menu has disappeared</a></p>
+<p><a href="#msofficecrash">My MS Office files crash GoodReader</a></p>
+<p><a href="#msofficeincorrect">My MS Office files are shown a little bit incorrectly - text is off-place, formatting is different, etc.</a></p>
+<p>&nbsp;</p>
+
+<p><b>Other</b></p>
+<p>Problem:</p>
+<p><a href="#notinopenin">I try to use &quot;Open In&quot; menu in some other app to send PDF and other files to GoodReader, but I don't see GoodReader in the list of apps</a></p>
+<p><a href="#mailhangs">I tried to send a file from Mail app to GoodReader via the &quot;Open In&quot; menu, Mail app suddenly froze, and I can't even start it anymore</a></p>
+<p><a href="#deadlock">GoodReader tried to open some file and crashed. Now I can't even start it, because it crashes every time trying to open that file on startup.</a></p>
+<p><a href="#forgotpassword">I forgot my app password</a></p>
+<p><a href="#other">Some other problem that is not listed here</a></p>
+<p>&nbsp;</p>
+
+
+<p><a id="browserlinks"></a><hr><b>I use GoodReader's built-in web-browser and some links don't work when I tap them</b></p>
+<p>GoodReader uses a very simple built-in web-browser, it's much simpler than Safari. This browser sometimes can't determine links if they're using pop-up windows or some fancy JavaScript code. However, there's an easy workaround that works in many cases. Tap the link and hold it for a while. System menu will pop up with the choice of actions. Select <b>Open</b> action. The link should open. If it doesn't open, select <b>Copy</b> (this will copy the URL address to clipboard) and then press <b>Follow the Link from Clipboard</b> button:<br>
+<img src="/HTML/HTMLbtnFollowClipboard.png" border="0" class="ButtonAfterText" width="39">
+</p>
+<p>&nbsp;<br><input type="button" onClick="location.href='#top'" value="Go up"></p>
+
+
+<p><a id="httpversion"></a><hr><b>I connect via WiFi using my web-browser and I see something like &quot;Error 501/505, HTTP version is not supported&quot;</b></p>
+<p>GoodReader uses HTTP/1.1 for WiFi communication. There are some important features that were not present in HTTP/1.0. If you see HTTP 505 error, it means that your browser tries to connect using HTTP/1.0 protocol, which is not supported by GoodReader.</p>
+<p>You can adjust your web-browser settings to use HTTP/1.1 instead of HTTP/1.0. However, instead of doing this, please consider using <a href="gr-man-tr-wifi.html#step6">&quot;professional&quot; WiFi transfer technique</a>, where this issue will not be relevant.</p>
+<p>&nbsp;<br><input type="button" onClick="location.href='#top'" value="Go up"></p>
+
+
+<p><a id="stopsyncing"></a><hr><b>I want to stop syncing a file or a folder, but can't delete the corresponding sync record</b></p>
+<p>If you wish to stop syncing a local file or a folder, you have to delete the corresponding sync record. Open the <b>Connect</b> control panel, find the sync record you wish to delete and use the <b>Trash</b> mini-button.</p>
+<p>&nbsp;<br><input type="button" onClick="location.href='#top'" value="Go up"></p>
+
+
+<p><a id="smbnopwd"></a><hr><b>When connecting to a shared Windows folder, GoodReader is always denying an access and asking for a password, but I don't have a password set up on my Windows machine</b></p>
+<p>It may be necessary to adjust <b>Advanced Sharing Settings</b> on your Windows machine: open <b>Network and Sharing Center</b>, click <b>Change advanced sharing settings</b> link on the left, find the <b>Password protected sharing</b> section and select the <b>Turn off password protected sharing</b> option. However, a more secure solution would be to actually set up a password for your Windows user account.</p>
+<p>&nbsp;<br><input type="button" onClick="location.href='#top'" value="Go up"></p>
+
+
+<p><a id="pdfclose"></a><hr><b>I cannot close a file, because navigation menu has disappeared</b></p>
+<p>The navigation menu with a back button has disappeared to give you more reading space. To bring this menu back, quickly tap in the middle of the screen (this applies to every file type).</p>
+<p>There's a very special case with PDF files, when tapping in the middle of the screen is not desirable. For example, the middle of the screen can be occupied by a big PDF Link, which will take you to a very different place if you tap it. For cases like this we have provided another way to turn the navigation menu on/off - a quick tap with three fingers anywhere on the screen (works with PDF files only).</p>
+<p>&nbsp;<br><input type="button" onClick="location.href='#top'" value="Go up"></p>
+
+
+<p><a id="pdfscans"></a><hr><b>Scanned images in my PDF files appear to be of a very low quality, although they're actually not</b></p>
+<p>You can choose the level of quality for scanned PDF images with the <b>Higher quality images</b> switch in app settings, PDF section. Choosing higher quality images produces better-looking scans, but impacts performance noticeably. If scanned images is not your main concern, you can disable this switch to get a faster page rendering.</p>
+<p>&nbsp;<br><input type="button" onClick="location.href='#top'" value="Go up"></p>
+
+
+<p><a id="pdfslowerthanbefore"></a><hr><b>PDF rendering and page turning became slower than it was before</b></p>
+<p>There are two things to try that may help:</p>
+<ul>
+	<li>Choose different <b>PDF displaying engine</b>. Choose between the &quot;fast&quot; one and the &quot;safe&quot; one. The safe engine is the original GoodReader's engine that was used in many versions prior to v.3.1. The newer fast engine shows smoother page zooming/panning, but consumes more memory, therefore may crash on certain files that can easily be opened with the original &quot;safe&quot; engine. However, it was noted that older engine loads pages faster for some PDF files. So try both these engines, and choose the one that you like more.</li>
+	<li>Disable <b>Higher quality images</b> switch in app settings, PDF section. Choosing higher quality images produces better-looking scans, but impacts performance noticeably. If scanned images is not your main concern, you can disable this switch to get a faster page rendering.</li>
+</ul>
+<p>&nbsp;<br><input type="button" onClick="location.href='#top'" value="Go up"></p>
+
+
+<p><a id="cantselecttext"></a><hr><b>I can't select a text to copy or to highlight it</b></p>
+<p>Some PDF files contain scanned images that look like text, but they're not, they're actually pictures. You need to have a real text defined in a PDF file to be able to select it.</p>
+<p>&nbsp;<br><input type="button" onClick="location.href='#top'" value="Go up"></p>
+
+
+<p><a id="cantdeletehighlight"></a><hr><b>I accidentally highlighted a text, but can't find a way to remove a highlight</b></p>
+<p>Tapping and holding a highlight/markup activates text selection mode, which is more natural for an underlying text. To invoke annotation-specific actions (deletion, color change, etc.), tap a highlight/markup briefly to bring up the menu. Please read more <a href="gr-man-view-pdf.html#annots">here</a></p>
+<p>&nbsp;<br><input type="button" onClick="location.href='#top'" value="Go up"></p>
+
+
+<p><a id="annotsinmail"></a><hr><b>I annotated a PDF file, emailed it to someone else's iPhone/iPad, but that person can't see my annotations in Mail app</b></p>
+<p><i>Explanation (see the solution in the next paragraph).</i> You will not be able to see your annotations in iPhone/iPad's standard Mail app. It doesn't mean that annotations are missing, they're there. It's just Mail app is not capable of showing them. Mail app only shows you a basic preview of what's inside a file. PDF Annotations is an advanced feature that is not a part of a &quot;standard&quot; PDF content. While it's not a problem on a computer (most computer PDF viewers do support annotations, Adobe Acrobat Reader and Mac's Preview are the most popular free ones), on iPad/iPhone/iPod it is necessary to use an advanced PDF viewer with explicit support for PDF Annotations (like GoodReader app, or a number of other apps).</p>
+<p><i>Solution.</i> GoodReader offers you the ability to <b>&quot;flatten&quot; a file</b>. During this process GoodReader embeds all PDF annotations into the main PDF page body, making them a part of a normal graphical page content. This results in two things: 1) every PDF-capable app (including Mail and Safari) will be able to show you flattened annotations, 2) all your annotations become non-editable, because they're not annotations anymore, but normal drawings that are drawn on a page as if they were initially drawn there during PDF file creation process. This may also be useful if you want to prevent your annotations from being edited by someone else.</p>
+<p>Flattening option will be offered to you every time you try to email a PDF file or send it to another app via the &quot;Open In...&quot; button. It is also available as a separate <b>Flatten Copy</b> command when viewing a PDF file and as a button in the file managing mode.</p>
+<p>GoodReader takes a smart approach to file flattening. It gives your recipient a chance to <b>&quot;unflatten&quot;</b> a file upon receiving (this can only be done in GoodReader app, other apps can't unflatten what was flattened by GoodReader). But this option must be explicitly enabled in GoodReader's settings (on a device that was used for flattening). The default setting is <b>not</b> to allow unflattening, to prevent your annotations from being edited by someone else. Please also note that if a recipient somehow edits a flattened file before unflattening it (by adding new annotations, for instance), the ability to unflatten previous annotations is lost.</p>
+<p>&nbsp;<br><input type="button" onClick="location.href='#top'" value="Go up"></p>
+
+
+<p><a id="flatannots"></a><hr><b>You say that iPhone/iPad's Mail app can't show PDF Annotations, but it correctly shows notes/drawings created in some other iPhone/iPad app</b></p>
+<p>See previous article for the explanation on why Mail app can't show PDF Annotations.</p>
+<p>However, it may look like annotations created in some other apps do appear in Mail app. It is important to understand that these are not real annotations, but rather their imitations. There are some apps that actually modify a standard PDF content to &quot;hard-code&quot; a graphical representation of annotations into a PDF page code, making them a non-removable part of PDF page contents. While this approach has a certain advantage (no problem with Mail app), the main disadvantage of it is that it alters the original PDF content in an irreversible manner, which means that you won't be able to delete or modify this imitation of an annotation later. This is not how we prefer to treat your files. Our annotations comply with Adobe PDF Specification, meaning that they can be removed or modified later by PDF processing programs like Adobe Acrobat and others on a computer or GoodReader and others on an iPad/iPhone.</p>
+<p>&nbsp;<br><input type="button" onClick="location.href='#top'" value="Go up"></p>
+
+
+<p><a id="missedrepair"></a><hr><b>When opening a PDF file for the first time I saw some message saying that this file is damaged, and there was an option to repair this file. I didn't use that option, and now I can't find the way to bring up that repairing message again.</b></p>
+<p>This message will be shown every time you'll be trying to annotate a damaged PDF file. If you want to try to repair a file, just try to create any annotation in it by tapping and holding anywhere on a page, and then selecting Note from the menu, and the repairing option will be presented to you.</p>
+<p>&nbsp;<br><input type="button" onClick="location.href='#top'" value="Go up"></p>
+
+
+<p><a id="exclamation"></a><hr><b>I see red exclamation point at the bottom of a page, and zooming became less responsive</b></p>
+<p>PDF page rendering is a very critical process that consumes a lot of operating memory. Sometimes it may lead to an app crash due to a low memory condition. If it happens, we'll automatically switch to a safer displaying engine for this particular file. It uses less memory, and it is more crash-safe in general, but it is considerably slower with zooming and panning. The fact that slower engine is being used is indicated by this sign:<br>
+<img src="/HTML/HTMLattentionSign.png" border="0" width="26"></p>
+<p>You can always switch back to faster engine by tapping it. It may be useful if you have eliminated conditions for low memory crashes. For example, hard-rebooting your iPhone/iPad (with powering off) may help. As you run different applications on your device, they can occupy more and more memory and other system resources over the time, regardless of the fact that you've quit all those applications. Rebooting frees operating memory completely.</p>
+<p>Another thing to try to prevent out-of-memory crashes under extreme memory conditions is disabling <a href="gr-man-view-pdf.html#precaching">pre-caching of adjacent pages</a> and <a href="gr-man-view-pdf.html#doublepage">double-page layouts</a>.</p>
+<p>&nbsp;<br><input type="button" onClick="location.href='#top'" value="Go up"></p>
+
+
+<p><a id="pdfslowspeed"></a><hr><b>My PDF takes extremely long time to open or to render a page</b></p>
+<p>iPhone/iPad is a relatively slow device, compared to a desktop computer. And PDF format is very complex, it allows to format its internal data in a variety of ways. Some of those ways are what we call &quot;iOS-unfriendly&quot;, meaning that they overload device's processor with a lot of unnecessary calculations.</p>
+<p>However, there's a very simple workaround for this. If you have a Mac computer, open this PDF file in Mac's standard <b>Preview</b> application, go to <b>File</b> menu and select <b>Save As</b> command. Then resave this file as a new PDF (just make sure to change a file name, to preserve the original file unchanged). The new PDF file will be formatted in iPhone-friendly way. Unfortunately, we're unaware of a Windows-based solution for this issue.</p>
+<p>&nbsp;<br><input type="button" onClick="location.href='#top'" value="Go up"></p>
+
+
+<p><a id="pdfasianfonts"></a><hr><b>Some characters (Asian, Arabic, special math symbols, etc.) in my PDFs are unreadable, but they appear correctly on my Mac/PC</b></p>
+<p>The reason - fonts are not embedded into a PDF file. iOS carries only a limited subset of certain fonts.</p>
+<p>There's a very easy workaround for this. You have to embed all fonts into a PDF file.</p>
+<p>If you have a Mac computer, open this PDF file in Mac's standard <b>Preview</b> application, go to <b>File</b> menu and select <b>Save As</b> command. Then resave this file as a new PDF (just make sure to change a file name, to preserve the original file unchanged). The new PDF file will contain all fonts.</p>
+<p>If you have a PC computer, the solution would be to reassemble a file in <b>Adobe Acrobat</b> software embedding all fonts into it. Print your file to a special <b>Adobe PDF</b> printer (installed by Acrobat). Make sure that inside this printer's settings, on <b>Fonts</b> tab <b>Embed all fonts</b> checkbox is on.</p>
+<p>If you're currently on the go, and desktop computer is not available, but you need an urgent access to a file with missing fonts, use <a href="gr-man-view-pdf.html#reflow">PDF Reflow feature</a>.</p>
+<p>&nbsp;<br><input type="button" onClick="location.href='#top'" value="Go up"></p>
+
+
+<p><a id="pdfreflownotext"></a><hr><b>I see the text on my PDF page, but PDF Reflow feature doesn't show this text</b></p>
+<p>The most probable reason is that you're seeing a scanned page. Please note that scanned page is not a textual information - it's a picture.</p>
+<p>Modern PDF-creating software often includes the OCR (Optical Character Recognition) information when creating PDFs from scanned pages. In such cases PDF Reflow may show you a valid text, but that's not always the case, many scanned PDFs don't have any textual information.</p>
+<p>&nbsp;<br><input type="button" onClick="location.href='#top'" value="Go up"></p>
+
+
+<p><a id="pdfcantfindtext"></a><hr><b>I see the text on my PDF page, but PDF Find feature can't find it</b></p>
+<p>Here are possible reasons for this:</p>
+<ul>
+	<li>the page is a scanned page. Please note that scanned page is not a textual information - it's a picture.</li>
+	<li>if your search string contains whitespaces, it may be the problem, because extracted text may contain no whitespaces or several whitespaces where there's just one in your search string. Try to avoid using whitespaces in search strings.</li>
+	<li>the text was not extracted correctly from a PDF page. Please note that correct extraction of pure text from a PDF page is not always possible. Use <a href="gr-man-view-pdf.html#reflow">PDF Reflow feature</a> to see how exactly the text was extracted. If you see that the text was extracted incorrectly, we encourage you to send this sample file to our <a href="/support/" target="_blank">customer support service</a> for further examining. Extracting text from PDFs requires some heuristics, so we might come up with better extracting solution after studying your file.</li>
+</ul>
+<p>&nbsp;<br><input type="button" onClick="location.href='#top'" value="Go up"></p>
+
+
+<p><a id="pdfreflowgibberish"></a><hr><b>I see the text on my PDF page, but PDF Reflow feature shows some unreadable characters instead of it</b></p>
+<p>You may see a scanned page, and PDF Reflow may extract textual information provided by OCR (Optical Character Recognition) engine of PDF creating software. Optical Character Recognition engine sometimes produces strange character sequences when it's uncertain about which character exactly it sees.</p>
+<p>&nbsp;<br><input type="button" onClick="location.href='#top'" value="Go up"></p>
+
+
+<p><a id="pdfreflowrtl"></a><hr><b>My right-to-left reading PDF file (Hebrew, Arabic, etc.) is shown backwards in PDF Reflow mode</b></p>
+<p>Some PDF files with right-to-left fonts instead of encoding text as they should - from right to left - actually contain text stored in left-to-right (i.e. reversed) order. GoodReader extracts text in the order as it appears in PDF file, which makes it look backwards in Reflow mode. We're still working on this issue. Please keep in mind that this problem is created by PDF creating software, which doesn't store text inside PDF in the correct order.</p>
+<p>&nbsp;<br><input type="button" onClick="location.href='#top'" value="Go up"></p>
+
+
+<p><a id="pdffindrtl"></a><hr><b>I see the text in my right-to-left reading PDF file (Hebrew, Arabic, etc.), but PDF Find feature can't find it, although it does find it if I enter it backwards</b></p>
+<p>Some PDF files with right-to-left fonts actually contain characters stored in left-to-right (i.e. reversed) order. To be able to find text in such files, the search string must be entered backwards. Use the <b>Flip search string</b> switch in <b>PDF</b> section of <b>Application Settings</b> to enter search string in readable form, and it will be flipped backwards internally during the search.</p>
+<p>&nbsp;<br><input type="button" onClick="location.href='#top'" value="Go up"></p>
+
+
+<p><a id="pdfunknownformat"></a><hr><b>GoodReader says that this PDF format is not recognized, but it shows fine on my Mac/PC</b></p>
+<p>The file could get damaged during file transfer process. Please check the file size and see if it matches the size of the original file. In any case try to delete a file and reupload it to GoodReader.</p>
+<p>If reuploading file doesn't help, we encourage you to send this sample file to our <a href="/support/" target="_blank">customer support service</a> for further examining.</p>
+<p>&nbsp;<br><input type="button" onClick="location.href='#top'" value="Go up"></p>
+
+
+<p><a id="pdfdisabledbltaps"></a><hr><b>I often find myself making accidental double-taps, when I don't mean to</b></p>
+<p>You can turn <b>Double-tap for zooming</b> option off in <b>PDF</b> section of <b>Applications Settings</b>. This option also controls the <b>single tap with two fingers</b> gesture for zooming out.</p>
+<p>&nbsp;<br><input type="button" onClick="location.href='#top'" value="Go up"></p>
+
+
+<p><a id="horlockdisabled"></a><hr><b>I'm unable to use Horizontal Scroll Lock feature, because the button is inaccessible (grayed out)</b></p>
+<p>Horizontal Scroll Lock feature only makes sense when you do vertical page turns. Therefore it is automatically disabled when you either turn the <b>Horizontal swipe</b> option on in Application Settings, or when you select a double-page layout for a PDF file (selecting a double-page layout automatically turns horizontal page swiping on).</p>
+<p>&nbsp;<br><input type="button" onClick="location.href='#top'" value="Go up"></p>
+
+
+<p><a id="txtencoding"></a><hr><b>My TXT file shows unreadable characters instead of a real text</b></p>
+<p>
+	In order to read TXT files you have to select the correct <a href="gr-man-view-txt.html#encodings">Text Encoding</a> first. This can be done in <b>Viewing TXT files</b> section of the <b>Application Settings</b> page, which can be opened with this button:<br>
+	<img src="/HTML/HTMLbtnFVSettings.png" border="0" class="ButtonAfterText" width="39">
+</p>
+<p>&nbsp;<br><input type="button" onClick="location.href='#top'" value="Go up"></p>
+
+
+<p><a id="msofficecrash"></a><hr><b>My MS Office files crash GoodReader</b></p>
+<p>Unlike with PDF and TXT files, for which we've written our own viewers, we use iOS's built-in viewing engine for MS Office files. This engine is not able to open large MS Office files.</p>
+<p>The solution would be to <a href="gr-man-howto.html#mstopdf">convert your MS Office files to PDFs</a>. Huge PDF files are not a problem for GoodReader.</p>
+<p>&nbsp;<br><input type="button" onClick="location.href='#top'" value="Go up"></p>
+
+
+<p><a id="msofficeincorrect"></a><hr><b>My MS Office files are shown a little bit incorrectly - text is off-place, formatting is different, etc.</b></p>
+<p>Unlike with PDF and TXT files, for which we've written our own viewers, we use iOS's built-in viewing engine for MS Office files. This engine sometimes shows MS Office files incorrectly.</p>
+<p>The best solution would be to <a href="gr-man-howto.html#mstopdf">convert your MS Office files to PDFs</a>. In this case you will solve the incorrect appearance problem, plus you'll get the ability to use our <b>Find Text in PDF files</b> feature and other PDF-specific features, like PDF Annotations, Highlights and Markups.</p>
+<p>&nbsp;<br><input type="button" onClick="location.href='#top'" value="Go up"></p>
+
+
+<p><a id="notinopenin"></a><hr><b>I try to use &quot;Open In&quot; menu in some other app to send PDF and other files to GoodReader, but I don't see GoodReader in the list of apps</b></p>
+<p>The following is valid only if you're referring to a file type that GoodReader actually supports (like .PDF, .TXT, .ZIP, etc.)</p>
+<p>The <b>Open In</b> functionality is controlled by iOS, we have no active control over it, we just declare GoodReader to be capable of accepting certain file types. Older versions of iOS are known to show only a limited number (10 or so) of randomly selected apps for any given file type when you invoke the <b>Open In</b> action in any app. The actual maximum number of apps depends on a device type and on a version of iOS. The only way to resolve the issue in such a case is to delete some apps that you don't need that expose themselves for a particular file type, to make way to other eligible apps.</p>
+<p>&nbsp;<br><input type="button" onClick="location.href='#top'" value="Go up"></p>
+
+
+<p><a id="mailhangs"></a><hr><b>I tried to send a file from Mail app to GoodReader via the &quot;Open In&quot; menu, Mail app suddenly froze, and I can't even start it anymore</b></p>
+<p>Please note that we have nothing to do with Mail app, and we have absolutely no ability to freeze it or to control it in any other way. But just so you know, a quick way to shut down any frozen app (including Mail app) is to hold Power button for a few seconds until &quot;Power Off&quot; screen comes up, and then to hold Home button for a few seconds, until an app being run gets shut down.</p>
+<p>&nbsp;<br><input type="button" onClick="location.href='#top'" value="Go up"></p>
+
+
+<p><a id="deadlock"></a><hr><b>GoodReader tried to open some file and crashed. Now I can't even start it, because it crashes every time trying to open that file on startup.</b></p>
+<p>Open main device <b>Settings</b>, look for GoodReader settings there. Turn the <b>Don't open anything</b> switch on and restart GoodReader - this time it will not try to reopen the problematic file.</p>
+<p>&nbsp;<br><input type="button" onClick="location.href='#top'" value="Go up"></p>
+
+
+<p><a id="forgotpassword"></a><hr><b>I forgot my app password</b></p>
+<p>That's bad, because we do not store a copy of your password anywhere outside your device. The only way to reset a password is to delete and reinstall the app. Please note that you will also be deleting all files stored inside GoodReader when deleting the app. In the future please try to do two important things: don't forget your password, and keep copies of your valuable files in a safe place on your desktop computer, just in case.</p>
+<p>&nbsp;<br><input type="button" onClick="location.href='#top'" value="Go up"></p>
+
+
+<p><a id="other"></a><hr><b>Some other problem that is not listed here</b></p>
+<p>Our friendly and experienced <a href="/support/" target="_blank">customer support service</a> will be happy to answer all your questions and to solve all kinds of problems that you might experience when using our software. Please make sure that your spam-filters will not block mail from <b>goodreader.com</b> mail domain.</p>
+<p>&nbsp;<br><input type="button" onClick="location.href='#top'" value="Go up"></p>
+							<!-- *******************************************************************
+							     *******************************************************************
+							     *******************************************************************
+							     *******************************************************************
+							     ******************************************************************* -->
+						</td></tr>
+						<tr><td>&nbsp;</td></tr>
+						<tr><td><input type="button" onClick="javascript:history.go(-1)" value="&lt;&lt; Go back"></td></tr>
+						<tr><td>&nbsp;</td></tr>
+						<tr><td>
+							<a href="https://itunes.apple.com/app/id777310222?ls=1&mt=8&at=10lMty" target="_blank" onClick="pageTracker._trackEvent('iTunes Link', 'GoodReader', 'EN');"><img src="/images/appstore.png" width="169" height="50" alt="" border="0">
+							</a>
+						</td></tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</td></tr>
+	<tr><td align="right" style="font-size:70%; color:#999999; padding:15px">Copyright &copy; Yuri Selukoff, 2008-2015. All rights reserved.</td></tr>
+</table>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-10600294-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

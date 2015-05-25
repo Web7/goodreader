@@ -56,7 +56,7 @@
 							<i class="fa fa-circle fa-stack-2x"></i>
 							<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
 						</span>
-					</a>
+				</a>
 				</li>
 				<li class="gr-social-icon"><a href="#">
 						<span class="fa-stack fa-lg">
@@ -69,44 +69,63 @@
 		</div>
 	</nav>
 </header>
-<div class="container">
-	<h1 class="text-primary">Support</h1>
-	<form>
-		<div class="row">
-			<div class="col-lg-6 form-group">
-				<small>Error message</small>
-				<input type="text" class="form-control" placeholder="Your name (required)">
-			</div>
-			<div class="col-lg-6 form-group has-error">
-				<small>Error message</small>
-				<input type="text" class="form-control" placeholder="Your email address (required) - error condition">
-			</div>
-		</div>
-		<div class="form-group has-success">
-			<small>Error message</small>
-			<input type="text" class="form-control" placeholder="Subject (required) - active condition">
-		</div>
-		<div class="form-group">
-			<small>Error message</small>
-			<textarea class="form-control" placeholder="Message (required)" rows="7"></textarea>
-		</div>
-		<p>File Attachment</p>
-		<div class="row">
-			<div class="col-lg-4 form-group">
-				<small>Error message</small>
-				<input type="text" class="form-control" placeholder="" readonly>
-			</div>
-			<div class="col-lg-3 form-group gr-text-center">
-				<button class="btn btn-default">Choose File</button>
+<div class="gr-manual-container container">
+	<div class="row">
+		<div class="gr-manual-menu col-lg-3">
+			<div class="gr-user-manual-menu gr-default">
+				<ul class="gr-stop-find">
+					<li class="active"><a href="#">Introduction</a></li>
+					<li><a href="#">How-Tos</a></li>
+					<li><a>Viewing Files</a>
+						<ul>
+							<li><a href="#">PDF</a></li>
+							<li><a href="#">TXT</a></li>
+							<li><a href="#">Pictures</a></li>
+							<li><a href="#">Audio & Video</a></li>
+							<li><a href="#">Other Files</a></li>
+						</ul>
+					</li>
+					<li class="active"><a>Transferring Files to GoodReader</a>
+						<ul>
+							<li class="active"><a href="#">USB File Transfer</a></li>
+							<li><a href="#">WiFi File Transfer</a></li>
+							<li><a href="#">Web Downloads</a></li>
+							<li><a href="#">Accessing Servers, E-mail attachment</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Manage Files, Send E-mail</a></li>
+					<li><a href="#">Troublesho</a></li>
+				</ul>
 			</div>
 		</div>
-		<div class="form-group gr-text-center">
-			<div class="g-recaptcha" data-sitekey="6LfYGgcTAAAAAPeZEr7N82khvQF1n3Hquz9o6NtJ"></div>
+		<div class="col-lg-9 col-lg-offset-3">
+			<a id="top"></a>
+			<h3 class="text-primary">
+				<p>GoodReader User Manual</p>
+				<p></p>
+			</h3>
+
+			<p>Choose manual topic:</p>
+			<a href="gr-man-general.html"><h6>Introduction</h6></a>
+			<a href="gr-man-howto.html"><h6>How-Tos</h6></a>
+			<h6>Viewing Files</h6>
+			<a href="gr-man-view-pdf.html"><h6 style="padding-left:50px">PDF</h6></a>
+			<a href="gr-man-view-txt.html"><h6 style="padding-left:50px">TXT</h6></a>
+			<a href="gr-man-view-pictures.html"><h6 style="padding-left:50px">Pictures</h6></a>
+			<a href="gr-man-view-av.html"><h6 style="padding-left:50px">Audio &amp; Video</h6></a>
+			<a href="gr-man-view-other.html"><h6 style="padding-left:50px">Other Files</h6></a>
+			<h6>Transferring Files to GoodReader</h6>
+			<a href="gr-man-tr-usb.html"><h6 style="padding-left:50px">USB File Transfer (computer-to-iPhone)</h6></a>
+			<a href="gr-man-tr-wifi.html"><h6 style="padding-left:50px">WiFi File Transfer (computer-to-iPhone)</h6></a>
+			<a href="gr-man-tr-web.html"><h6 style="padding-left:50px">Web Downloads (Internet-to-iPhone)</h6></a>
+			<a href="gr-man-tr-servers.html"><h6 style="padding-left:50px">Accessing Servers, E-mail attachments</h6></a>
+			<a href="gr-man-manage.html"><h6>Manage Files, Send E-mail</h6></a>
+			<a href="gr-man-trouble.html"><h6>Troubleshooting</h6></a>
+
 		</div>
-		<div class="form-group gr-text-center">
-			<button class="btn btn-primary btn-lg">Send Email</button>
-		</div>
-	</form>
+	</div>
+
+
 </div>
 <div class="gr-footer">
 	<div class="container">
@@ -175,7 +194,7 @@
 					</li>
 				</ul>
 			</div>
-			<div class="col-lg-3 hide">
+			<div class="col-lg-3">
 				<div class="gr-contact-form-container">
 					<p>Contact form</p>
 					<form>

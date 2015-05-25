@@ -1,0 +1,267 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<meta http-equiv="content-language" content="en">
+    <title>goodreader.com :: products :: GoodReader :: Manual :: Servers</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="copyright" content="Copyright 2008 by Good.iWare">
+	<meta name="resource-type" content="document">
+	<meta name="distribution" content="global">
+	<link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table width="1000" border="0" cellpadding="0" cellspacing="0">
+	<tr><td><a href="index.html"><img src="/images/top.jpg" width="1000" height="122" alt="" border="0"></a></td></tr>
+	<tr><td bgcolor="#FFFFFF" width="100%" height="27">
+		<table width="100%" border="0" cellpadding="0" cellspacing="2px" style="color:#333333">
+			<tr>
+				<td width="154" height="27" align="center" bgcolor="#777777"><a class="menuLink" href="index.html">GoodReader</a></td>
+				<td width="154" height="27" align="center" bgcolor="#777777"><a class="menuLink" href="/support/" target="_blank">support</a></td>
+				<td>&nbsp;</td>
+			</tr>
+		</table>
+	</td></tr>
+	<tr><td>
+		<table border="0" cellpadding="0" cellspacing="0">
+			<tr>
+				<td valign="top" bgcolor="#FFFFFF" style="color:#333333">
+					<table width="158" align="center" border="0" cellpadding="0" cellspacing="0">
+						<tr><td height="17" class="contLeftMenuSubmenu1" style="font-size:12px">
+							<a class="menuLink" style="font-size:12px" href="index.html">Overview</a>
+						</td></tr>
+						<tr><td height="17" class="contLeftMenuSubmenu1" style="font-size:12px">
+							<a class="menuLink" style="font-size:12px" href="gr-man.html">User Manual</a>
+						</td></tr>
+						<tr><td height="17" class="contLeftMenuSubmenu2" style="font-size:12px">
+							<a class="menuLink" style="font-size:12px" href="gr-man-howto.html">How-Tos</a>
+						</td></tr>
+						<tr><td height="17" class="contLeftMenuSubmenu2" style="font-size:12px">
+							<a class="menuLink" style="font-size:12px" href="gr-man-tr-usb.html">USB File Transfer</a>
+						</td></tr>
+						<tr><td height="17" class="contLeftMenuSubmenu2" style="font-size:12px">
+							<a class="menuLink" style="font-size:12px" href="gr-man-tr-wifi.html">WiFi File Transfer</a>
+						</td></tr>
+						<tr><td height="17" class="contLeftMenuSubmenu2" style="font-size:12px">
+							<a class="menuLink" style="font-size:12px" href="gr-man-trouble.html">Troubleshooting</a>
+						</td></tr>
+					</table>
+				</td>
+				<td valign="top" bgcolor="#FFFFFF" class="content">
+					<table border="0" cellpadding="1" cellspacing="0">
+						<tr><td>
+							<table border="0" cellpadding="0" cellspacing="0">
+								<tr>
+									<td valign="top"><img src="/images/gr-icon-96.jpg" width="96" height="143" alt="" border="0"></td>
+									<td width="15">&nbsp;</td>
+									<td valign="top">
+										<p style="font-size:21px"><b>GoodReader User Manual</b></p>
+										<h2>Accessing Servers, E-mail attachments</h2>
+									</td>
+								</tr>
+							</table>
+						</td></tr>
+						<tr><td>&nbsp;</td></tr>
+						<tr><td><input type="button" onClick="javascript:history.go(-1)" value="&lt;&lt; Go back"></td></tr>
+						<tr><td>&nbsp;</td></tr>
+						<tr><td>
+							<!-- *******************************************************************
+							     *******************************************************************
+							     *******************************************************************
+							     *******************************************************************
+							     ******************************************************************* -->
+<p>GoodReader offers you the ability to access different kinds of servers.</p>
+
+<p><a href="#read1st">Read Me First</a></p>
+<p><a href="#sync">Automatic Synchronization</a></p>
+<p><a href="#email">Accessing E-Mail servers to download E-Mail attachments</a></p>
+<p><a href="#webdav">Accessing WebDAV servers</a></p>
+<p><a href="#dropbox">Accessing Dropbox</a></p>
+<p><a href="#onedrive">Accessing OneDrive</a></p>
+<p><a href="#googledrive">Accessing Google Drive</a></p>
+<p><a href="#sugarsync">Accessing SugarSync</a></p>
+<p><a href="#ftp">Accessing FTP servers</a></p>
+<p><a href="#sftp">Accessing SFTP servers</a></p>
+<p><a href="#afp">Accessing AFP servers (shared Mac folders, Apple Time Capsule, etc.)</a></p>
+<p><a href="#smb">Accessing SMB servers (shared Windows folders, various NAS drives, etc.)</a></p>
+
+<h2><a id="read1st"></a><hr>Read Me First</h2>
+<p>Before connecting to a server, its record must be created. To create a server record, open the <b>Connect</b> control panel, find the servers section and press the <b>Add</b> button. Then select a server type to add. You will be asked to enter readable title of a server record (this title is what you will see in a server records list), user name and password to access this server, URL of a server (except for pre-configured servers, for which GoodReader knows their URLs), and possibly some other connection parameters, depending on a server type.</p>
+<p>For extra security, don't store a password in a server record, this way you will have to enter it manually every time when connecting. Not all servers allow it though. Some servers, like Dropbox, OneDrive and Google Drive, provide a proprietary authentication mechanism via their own webpage. In these cases GoodReader doesn't store your password at all, and can't control how often you're asked to enter it.</p>
+<p>You can always edit server record data by pressing the “settings” mini-button to the right of server title in the server records list.</p>
+<p>If you're trying to connect to a server on a local WiFi network, and this server advertises itself via <b>Bonjour</b> protocol, you can find this server and connect to it automatically, without manually entering its connection parameters, by pressing the “reload list of local servers” link in the servers section of the <b>Connect</b> control panel. We can automatically find and create server records for the following server types via Bonjour: WebDAV, AFP, SMB, FTP<sup>*</sup>, SFTP. Please note that not all local servers will advertise themselves via Bonjour.</p>
+<p class="footnote">* - unavailable in &quot;GoodReader for SECTOR&quot; app </p>
+<p>The <b>Pin</b> button, found on <b>Bonjour</b> server records, can be used to quickly create a permanent record for a server, eliminating the need to find this server via Bonjour the next time you need to access this server or sync to it. Permanent (non-Bonjour) server records generally offer more flexibility, allowing to edit things like login name, display title, startup path, SFTP public key authentication, etc.</p>
+<p>Tap a server record to connect to this server.</p>
+<p>When connected to a general file server, you will see a list of folders and files on that server. If you tap a file's or folder's name, you will select it for further downloading or syncing. Once selected everything you need to download, press the <b>Download</b> button, and the downloading process will start on the background. If you need to browse inside a folder, tap a blue arrow to the right of its name. For E-Mail servers you will see headlines of messages (see details in the <a href="#email">appropriate section</a>).</p>
+<p>It's ok to have several separate downloads at the same time.</p>
+<p>Find information about your downloads in the <b>Downloads</b> section of the <b>Connect</b> control panel.</p>
+<p>You can <b>upload</b> files and folders from GoodReader to servers by pressing the <b>Upload</b> button and selecting local files/folders to upload. This feature is not available for E-Mail servers.</p>
+<p>You can <b>automatically sync</b> files and folders located in GoodReader to their remote versions on a server. Details <a href="#sync">can be found here</a>.</p>
+<p>You can <b>delete</b> files and folders (or email messages) from a server by swiping their names (be careful - this can't be undone).</p>
+<p>
+	In case if network error happens, GoodReader may show you an error message instead of a server folder contents. To reload the real contents of a server folder into GoodReader's memory, press <b>Reload</b> button:<br>
+	<img src="/HTML/HTMLbtnWDCReload.png" border="0" width="39">
+</p>
+
+<p>&nbsp;<br><input type="button" onClick="location.href='#top'" value="Go up"></p>
+
+
+<h2><a id="sync"></a><hr>Automatic Synchronization</h2>
+<p>GoodReader can automatically <b>sync</b> individual files and entire folders to their remote versions hosted on online servers of the following types: <b>Dropbox</b>, <b>OneDrive</b>, <b>Google Drive</b>, <b>SugarSync</b> and also any <b>WebDAV</b>, <b>AFP</b>, <b>SMB</b>, <b>FTP</b><sup>*</sup> or <b>SFTP</b> server.</p>
+<p class="footnote">* - unavailable in &quot;GoodReader for SECTOR&quot; app </p>
+<p>There are two different types of sync - <b>normal</b> sync and <b>download-only</b> sync. The idea of <b>normal</b> sync is to keep the contents of a local file or a folder identical to what you have on a server. The idea of <b>download-only</b> sync is a convenient distribution of frequently updated documents to a group of people.</p>
+<p>The sync process consists of two parts: initial setup and actual synchronization. </p>
+<p><i>Initial setup.</i> Do this only once per each file/folder you wish to synchronize. Open a connection to a server, find a file or folder that you wish to sync, tap it so it becomes highlighted. The <b>Sync</b> button will appear at the bottom. Press it. Then select a target local folder inside GoodReader where you want this file/folder to be put. Then press the <b>Download here &amp; Synchronize</b> button. This will create synchronization record in <b>Downloads</b> section and show you the parameters window where you can set various sync options. Once you're done with it, you're ready to sync. All relevant remote files will be automatically downloaded to your device when doing the very first synchronization, so there is no need to run a separate downloading process for this file/folder with the <b>Download</b> button.</p>
+<p>
+	All files and folders that are a part of the sync process are tagged with a special badge:<br/>
+	<img src="/HTML/HTMLSyncBadge_Folder.png" border="0" width="57"><img src="/HTML/HTMLSyncBadge_File.png" border="0" width="46">
+</p>
+<p>
+	<i>Actual synchronization.</i> You execute the sync by pressing the <b>Sync</b> button on the main screen of the iPad (it's not the same Sync button that you used for the initial setup) or on the <b>Connect</b> control panel of the iPhone. Alternatively, you can find the <b>Sync</b> button at the top of every file viewer's navigation menu. This button will execute the sync for all the folders and files with all the servers that you have set up for synchronization. However, if you only want to sync one of such files/folders, you can find its sync record in the <b>Downloads</b> section and press this mini-button:<br/>
+	<img src="/HTML/HTMLSyncButton.png" border="0" width="37">
+</p>
+<p>
+	A progress popup appears during the sync process. Press the <b>Hide</b> button to hide this popup and continue the sync in the background. You will be able to continue reading your documents while the sync is working. Press the <b>Sync</b> button again to bring back the hidden progress popup. Also, you can press the popup's <b>Schedule</b> button to set up an automatic periodical sync execution:<br/>
+	<img src="/HTML/HTMLSyncScheduleButton.png" border="0" width="37">
+</p>
+<p><b>Normal sync</b>. During this process GoodReader analyzes the contents of both local and remote folders and does the following:</p>
+<ul>
+	<li>looks for <b>modified files</b> (for example, freshly annotated PDFs) on your device and uploads them to a server, replacing old ones there</li>
+	<li>looks for modified files on a server and downloads them to your device, replacing old ones there</li>
+	<li>looks for <b>new files</b> on a server and downloads them to your device</li>
+	<li>looks for new local files and uploads them to a server</li>
+	<li>looks for <b>deleted files</b> on a server that were previously present, and deletes them from your device</li>
+	<li>looks for deleted local files that were previously present, and deletes them from a server</li>
+</ul>
+<p><b>Download-only sync</b>. This type of sync doesn't care what happens with your local files, it never puts anything on a server, never deletes anything from it, it only looks for <b>new</b> and <b>modified</b> remote files and downloads them as needed. By default, files that were deleted from a server will be deleted from your local device. However, you can prevent this from happening by resetting the <b>Delete local files</b> switch in the sync record parameters window. In case if you choose to delete such local files, you can also choose whether or not you want to keep <i>modified</i> local files that were deleted from a remote server. This option may be useful to preserve your valuable notes that you've put over a PDF file, even if the corresponding remote file was deleted from a server.</p>
+<p><b>Attention!!!</b> When doing a normal sync, be extra careful when deleting files/folders from a synced zone, either on your device or on a server, because this will make GoodReader delete their synced counterparts during the next sync session. If you accidentally deleted such local file, <b>do not sync</b>, but rather open a connection to a server, find this file there and manually download it to a local folder where you accidentally deleted it from.<br/>
+However, you can prevent this from happening. There are two switches available on a sync record parameters window (press a blue button to the right of a sync record to edit its parameters). These switches allow you to prohibit a deletion of local/remote files/folders whose remote/local counterparts are missing at the time of syncing.</p>
+<p>If you modify a synced file both locally and on a server independently and then try to sync it, this will create a <b>sync conflict</b>, because GoodReader will not know which version of a file to choose. You can set up a policy on sync conflicts per each sync record individually. The following options are available: <b>Ask what to do</b> (the default option, you will be able to manually choose an appropriate action per each conflicted file individually during every sync session), <b>Leave unresolved</b> (leaves both files intact, allowing you to deal with this conflict later), <b>Local files have priority</b> (replaces remote conflicted files with local ones, making you loose remote ones forever; be careful with this option!!!), <b>Remote files have priority</b> (replaces local conflicted files with remote ones, making you loose local ones forever; be careful with this option!!!), <b>Create duplicates</b> (renames both files to avoid further conflicts, leaving you with both versions of a file everywhere - on your device and on a server; the safest option). Also, during the actual synchronization, GoodReader may sometimes offer you the <b>Discard this conflict, files are identical</b> conflict resolution option. Use this option to save your Internet traffic, but only if you know for sure that these files are identical.</p>
+<p>While every effort was made to ensure data integrity in all abnormal situations (losing Internet connection, manual process abortion, etc.), we strongly encourage you to take precautions to make sure that the sync process will not be aborted halfway. Sync process is a sensitive one, and it may result in a data loss if used inappropriately. Just keep that in mind, and everything should be fine.</p>
+<p>Important!!! <b>Do not modify</b> (upload, rename, delete, etc.) your files and folders, both local and remote, while GoodReader performs the actual synchronization. Doing so may result in a damaged file being transferred and/or inconsistent file/folder structure either on your device, or on your server.</p>
+
+<p>&nbsp;<br><input type="button" onClick="location.href='#top'" value="Go up"></p>
+
+
+<h2><a id="email"></a><hr>Accessing E-Mail servers to download E-Mail attachments</h2>
+<p>There are two ways to get your E-Mail file attachments into GoodReader - by using Apple's Document Interchange feature (you can use this feature to copy Apple's Mail app attachments into GoodReader by selecting GoodReader in the <b>Open In...</b> menu of the Mail app) or accessing online E-Mail servers via IMAP or POP3 protocol directly from GoodReader to find a message with a file attachment and to download such attachment into GoodReader.</p>
+<p>This section describes the latter of two methods - accessing online IMAP and POP3 mail servers.</p>
+<p>Please read the <a href="#read1st">Read Me First</a> introduction.</p>
+<p>IMAP is a much more advanced protocol than POP3, and it works much faster when downloading message headlines. Please use IMAP instead of POP3 if your server supports it.</p>
+<p>GoodReader offers a set of pre-configured popular mail servers - <b>gmail.com</b>, <b>iCloud mail (me.com)</b>, <b>yahoo.com</b>, <b>hotmail.com</b> and <b>aol.com</b>. GoodReader knows how to access these servers. You only have to provide your user name and password.</p>
+<p>When entering connection parameters for servers other than pre-configured ones, you will be asked to specify if a server uses SSL, and a type of authentication. Please avoid using &quot;Password&quot; authentication when &quot;Use SSL&quot; is off. By doing so you expose your password to the whole world every time you connect.</p>
+<p>When a server uses IMAP protocol, GoodReader by default scans all messages on a server and shows you only messages with file attachments. You can change this behaviour and make GoodReader show you all the messages for IMAP servers by switching the <b>Emails with attachments only</b> option in <b>Application Settings</b>, <b>Other Settings</b> section.</p>
+<p>IMAP servers: messages with attachments will be marked with a paperclip image. When you tap on such a message, you will get to the detailed view, showing you the list of all files attached to this message. Tapping on an actual attachment will select it for further downloading. Once selected everything you need to download, press the <b>Download</b> button, and the downloading process will start on the background.</p>
+<p>While IMAP protocol allows to determine if a message contains file attachments while scanning for message headlines, POP3 doesn't offer such information until the actual downloading of a message has started. So, when it comes to POP3, to save your Internet traffic, we show you all the messages with a question mark, to indicate a fact that it is unknown at the moment if this message contains an attachment or not. When you tap on such a message, GoodReader will start actual downloading, and will determine if there are attachments or not.</p>
+
+<p>&nbsp;<br><input type="button" onClick="location.href='#top'" value="Go up"></p>
+
+
+<h2><a id="webdav"></a><hr>Accessing WebDAV servers</h2>
+<p>You can access file storage and sharing servers that support WebDAV protocol. You can <b>browse</b> such servers, <b>download</b>, <b>upload</b>, <a href="#sync">sync</a> and <b>delete</b> files and entire folders.</p>
+<p>Please read the <a href="#read1st">Read Me First</a> introduction.</p>
+<p>You can find the <b>Windows-style name encoding</b> switch in server parameters. Windows-based servers expect a certain Unicode normalization to be applied to file and folder names. Try this switch if uploading or syncing files with names containing accented European characters produces unexpected results.</p>
+
+<p>&nbsp;<br><input type="button" onClick="location.href='#top'" value="Go up"></p>
+
+
+<h2><a id="dropbox"></a><hr>Accessing Dropbox</h2>
+<p>GoodReader offers you a server-style access to Dropbox. It allows you to browse your Dropbox account like a simple file server. You can <b>download</b>, <b>upload</b>, <a href="#sync">sync</a> and <b>delete</b> files and entire folders.</p>
+<p>Please read the <a href="#read1st">Read Me First</a> introduction.</p>
+<p>GoodReader can publish individual files and folders from your Dropbox account. Select files and folders you want to share with others, press the <b>Share</b> button, and GoodReader will create a special public downloading link and send it via email.</p>
+
+<p>&nbsp;<br><input type="button" onClick="location.href='#top'" value="Go up"></p>
+
+
+<h2><a id="onedrive"></a><hr>Accessing OneDrive</h2>
+<p>GoodReader offers you a server-style access to OneDrive. It allows you to browse your OneDrive account like a simple file server. You can <b>download</b>, <b>upload</b>, <a href="#sync">sync</a> and <b>delete</b> files and entire folders.</p>
+<p>Please read the <a href="#read1st">Read Me First</a> introduction.</p>
+
+<p>&nbsp;<br><input type="button" onClick="location.href='#top'" value="Go up"></p>
+
+
+<h2><a id="googledrive"></a><hr>Accessing Google Drive</h2>
+<p>GoodReader offers you a server-style access to Google Drive. It allows you to browse your Google Drive account like a simple file server. You can <b>download</b>, <b>upload</b>, <a href="#sync">sync</a> and <b>delete</b> files and entire folders.</p>
+<p>Please read the <a href="#read1st">Read Me First</a> introduction.</p>
+<p>Besides storing normal files, Google Drive also works with its proprietary objects - spreadsheets, drawings, forms, presentations, etc. Such files can't be downloaded directly. They will be converted to a PDF during downloading. Also, such files can't be <a href="#sync">synced</a> to GoodReader's local file storage.</p>
+
+<p>&nbsp;<br><input type="button" onClick="location.href='#top'" value="Go up"></p>
+
+
+<h2><a id="sugarsync"></a><hr>Accessing SugarSync</h2>
+<p>GoodReader offers you a server-style access to SugarSync. It allows you to browse your SugarSync account like a simple file server. You can <b>download</b>, <b>upload</b>, <a href="#sync">sync</a> and <b>delete</b> files and entire folders.</p>
+<p>Please read the <a href="#read1st">Read Me First</a> introduction.</p>
+
+<p>&nbsp;<br><input type="button" onClick="location.href='#top'" value="Go up"></p>
+
+
+<h2><a id="ftp"></a><hr>Accessing FTP servers<sup>*</sup></h2>
+<p>GoodReader offers the ability to access FTP servers. You can <b>browse</b> servers, <b>download</b>, <b>upload</b>, <a href="#sync">sync</a> and <b>delete</b> files and entire folders. Please note that FTP protocol is insecure. Use <a href="#sftp">SFTP access</a> for confidential documents.</p>
+<p>Please read the <a href="#read1st">Read Me First</a> introduction.</p>
+<p>GoodReader supports FTP servers with non-Unicode national text encodings. While most modern FTP servers transfer file names using Unicode-based UTF-8 text encoding, it's not always the case. So if you see unreadable file names when accessing your server from GoodReader, try to choose the correct text encoding in your server's record parameters.</p>
+<p class="footnote">* - unavailable in &quot;GoodReader for SECTOR&quot; app </p>
+
+<p>&nbsp;<br><input type="button" onClick="location.href='#top'" value="Go up"></p>
+
+
+<h2><a id="sftp"></a><hr>Accessing SFTP servers</h2>
+<p>GoodReader offers the ability to access SFTP servers. You can <b>browse</b> servers, <b>download</b>, <b>upload</b>, <a href="#sync">sync</a> and <b>delete</b> files and entire folders.</p>
+<p>Please read the <a href="#read1st">Read Me First</a> introduction.</p>
+<p>GoodReader supports SFTP servers with non-Unicode national text encodings. While most modern SFTP servers transfer file names using Unicode-based UTF-8 text encoding, it's not always the case. So if you see unreadable file names when accessing your server from GoodReader, try to choose the correct text encoding in your server's record parameters.</p>
+<p>Many SFTP servers define two different entry points into their file systems - &quot;file system root&quot; and &quot;user home directory&quot;. Use the <b>Path starts at system root</b> switch in server record parameters to choose the correct entry point to your server's file system. The <b>Path</b> parameter is relative to the chosen entry point.</p>
+
+<p>&nbsp;<br><input type="button" onClick="location.href='#top'" value="Go up"></p>
+
+
+<h2><a id="afp"></a><hr>Accessing AFP servers (shared Mac folders, Apple Time Capsule, etc.)</h2>
+<p>AFP protocol is used by Mac computers to provide access to shared Mac folders. It is also used by Apple Time Capsule and a number of other NAS drives.</p>
+<p>GoodReader offers the ability to access AFP servers. You can <b>browse</b> servers, <b>download</b>, <b>upload</b>, <a href="#sync">sync</a> and <b>delete</b> files and entire folders.</p>
+<p>Please read the <a href="#read1st">Read Me First</a> introduction.</p>
+<p>There's the <b>Default mode</b> switch in the server connection parameters window. Leave it ON for most cases. Turn it off only if you're having trouble downloading or uploading files.</p>
+<p>AFP servers may contain write-only folders. The <b>Drop Box</b> folder on a Mac computer is an example of such folder. It allows people on a network to connect to your Mac to send files to you without revealing the list of files that other people have previously sent there. GoodReader will not show the contents of such folders, but the <b>Upload</b> button will still work, allowing you to send files to such write-only folders.</p>
+
+<p>&nbsp;<br><input type="button" onClick="location.href='#top'" value="Go up"></p>
+
+
+<h2><a id="smb"></a><hr>Accessing SMB servers (shared Windows folders, various NAS drives, etc.)</h2>
+<p>SMB protocol is used by Windows and Mac computers to provide access to shared folders. It is also used by a number of NAS drives.</p>
+<p>GoodReader offers the ability to access SMB servers. You can <b>browse</b> servers, <b>download</b>, <b>upload</b>, <a href="#sync">sync</a> and <b>delete</b> files and entire folders.</p>
+<p>Please read the <a href="#read1st">Read Me First</a> introduction.</p>
+<p>Most SMB servers on a local WiFi network can be auto-discovered by pressing the &quot;reload list of local servers&quot; link in the <b>Servers Found via WiFi</b> section of <b>Connect</b> panel. However, due to a number of factors, including router and firewall settings, some servers may not appear in auto discovery list. In this case you will have to create a server record and manually enter either the server's name or its IP-address.</p>
+<p><i>A note to Windows 7 users:</i> while setting a shared folder on a Windows 7 machine requires almost no effort, it may be necessary to adjust <b>Advanced Sharing Settings</b> in certain cases. For example, if you don't have a password set up for your Windows user account, you may find yourself being unable to remotely connect to a shared folder, because of access being denied. If you're experiencing such an issue, you may want to open <b>Network and Sharing Center</b> on your Windows machine, click <b>Change advanced sharing settings</b> link on the left, find the <b>Password protected sharing</b> section and select the <b>Turn off password protected sharing</b> option. However, a more secure solution would be to actually set up a password for your Windows user account.</p>
+<p><i>A note to Apple Time Capsule users:</i> when auto-discovering servers on a local WiFi network, Apple Time Capsule will be discovered twice - as an AFP server and as an SMB server. While Time Capsule's main drive can be accessed via both protocols, an external USB flash drive attached to its USB port will only be accessible via SMB protocol.</p>
+
+<p>&nbsp;<br><input type="button" onClick="location.href='#top'" value="Go up"></p>
+							<!-- *******************************************************************
+							     *******************************************************************
+							     *******************************************************************
+							     *******************************************************************
+							     ******************************************************************* -->
+						</td></tr>
+						<tr><td>&nbsp;</td></tr>
+						<tr><td><input type="button" onClick="javascript:history.go(-1)" value="&lt;&lt; Go back"></td></tr>
+						<tr><td>&nbsp;</td></tr>
+						<tr><td>
+							<a href="https://itunes.apple.com/app/id777310222?ls=1&mt=8&at=10lMty" target="_blank" onClick="pageTracker._trackEvent('iTunes Link', 'GoodReader', 'EN');"><img src="/images/appstore.png" width="169" height="50" alt="" border="0">
+							</a>
+						</td></tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</td></tr>
+	<tr><td align="right" style="font-size:70%; color:#999999; padding:15px">Copyright &copy; Yuri Selukoff, 2008-2015. All rights reserved.</td></tr>
+</table>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-10600294-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

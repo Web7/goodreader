@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<title>Support</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/common.css" />
+	<script src='https://www.google.com/recaptcha/api.js'></script>
+</head>
+<body>
+<header>
+	<nav class="navbar navbar-default">
+		<div class="container">
+			<a class="gr-logo navbar-brand" href="/"></a>
+			<ul class="nav navbar-nav navbar-right">
+				<li>
+					<a href="#">About</a>
+					<ul>
+						<li><a href="#">Overview</a></li>
+						<li><a href="#">End User License Agreement (EULA)</a></li>
+						<li><a href="#">Updates History</a></li>
+					</ul>
+				</li>
+				<li class="active">
+					<a href="#">User Manual</a>
+					<ul>
+						<li><a href="#">Introduction</a></li>
+						<li><a href="#">How-Tos</a></li>
+						<li><a>Viewing Files</a>
+							<ul>
+								<li><a href="#">PDF</a></li>
+								<li><a href="#">TXT</a></li>
+								<li><a href="#">Pictures</a></li>
+								<li><a href="#">Audio & Video</a></li>
+								<li><a href="#">Other Files</a></li>
+							</ul>
+						</li>
+						<li class="active"><a>Transferring Files to GoodReader</a>
+							<ul>
+								<li class="active"><a href="#">USB File Transfer</a></li>
+								<li><a href="#">WiFi File Transfer</a></li>
+								<li><a href="#">Web Downloads</a></li>
+								<li><a href="#">Accessing Servers, E-mail attachment</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Manage Files, Send E-mail</a></li>
+						<li><a href="#">Troublesho</a></li>
+					</ul>
+				</li>
+				<li><a href="support.html">Support</a></li>
+				<li><a href="#">Related Products</a></li>
+				<li class="gr-social-icon"><a href="#">
+						<span class="fa-stack fa-lg">
+							<i class="fa fa-circle fa-stack-2x"></i>
+							<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+						</span>
+				</a>
+				</li>
+				<li class="gr-social-icon"><a href="#">
+						<span class="fa-stack fa-lg">
+							<i class="fa fa-circle fa-stack-2x"></i>
+							<i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+						</span>
+				</a></li>
+			</ul>
+			<a class="gr-mobile-menu fa fa-bars"></a>
+		</div>
+	</nav>
+</header>
+<div class="gr-manual-container container">
+	<div class="row">
+		<div class="gr-manual-menu col-lg-3">
+			<div class="gr-user-manual-menu gr-default">
+				<ul class="gr-stop-find">
+					<li class="active"><a href="#">Introduction</a></li>
+					<li><a href="#">How-Tos</a></li>
+					<li><a>Viewing Files</a>
+						<ul>
+							<li><a href="#">PDF</a></li>
+							<li><a href="#">TXT</a></li>
+							<li><a href="#">Pictures</a></li>
+							<li><a href="#">Audio & Video</a></li>
+							<li><a href="#">Other Files</a></li>
+						</ul>
+					</li>
+					<li class="active"><a>Transferring Files to GoodReader</a>
+						<ul>
+							<li class="active"><a href="#">USB File Transfer</a></li>
+							<li><a href="#">WiFi File Transfer</a></li>
+							<li><a href="#">Web Downloads</a></li>
+							<li><a href="#">Accessing Servers, E-mail attachment</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Manage Files, Send E-mail</a></li>
+					<li><a href="#">Troublesho</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-lg-9 col-lg-offset-3">
+			<a id="top"></a>
+			<h3 class="text-primary">
+				<p>GoodReader User Manual</p>
+				<p>Viewing PDF Files</p>
+			</h3>
+
+			<p>GoodReader supports viewing of very large PDF files (including password-protected files). You have to make sure that your file has .PDF extension, otherwise it may be opened by device's built-in viewing engine, which doesn't have many of the features that our own viewing engine has.</p>
+
+			<p><a href="#read1st">Read Me First</a></p>
+			<p><a href="#buttons">Buttons and controls</a></p>
+			<p><a href="#tips">Tips for reading, scrolling and zooming</a></p>
+			<p><a href="#annots">PDF Annotations, Highlights and Markups</a></p>
+			<p><a href="#flatten">Flattening annotations</a></p>
+			<p><a href="#sign">Sign documents</a></p>
+			<p><a href="#pagemgmt">Page Management (adding, deleting, extracting, etc.)</a></p>
+			<p><a href="#reflow">PDF Reflow (Extracting Pure Text)</a></p>
+			<p><a href="#copytext">Copying text from a PDF page</a></p>
+			<p><a href="#find">Find Text in PDF</a></p>
+			<p><a href="#tapzones">Tap Zones</a></p>
+			<p><a href="#doublepage">Double-Page Layout</a></p>
+			<p><a href="#crop">Crop Margins</a></p>
+			<p><a href="#rotate">Rotate all pages</a></p>
+			<p><a href="#precaching">Pre-caching of adjacent pages</a></p>
+			<p><a href="#horlock">Horizontal Scroll Lock</a></p>
+			<p><a href="#links">PDF Links (tappable hyperlinks)</a></p>
+			<p><a href="#bookmarks">Locations - Bookmarks, Table of Contents (Outlines), Annotations Summary</a></p>
+			<p><a href="#daynight">Day / Night reading mode</a></p>
+			<p><a href="#sendfiles">Help us help you</a></p>
+
+
+			<h2><a id="read1st"></a><hr>Read Me First</h2>
+			<p>When you open any file, you can see a navigation menu and a button bar, which you can use to close a file and to select actions with buttons.</p>
+			<p>This navigation menu and button bar soon will disappear to give you more viewing space.</p>
+			<p>To bring the menu and the buttons back you have to quickly tap in the middle of the screen (this applies to every file type). There's a very special case with PDF files, when tapping in the middle of the screen is not desirable. For example, the middle of the screen can be occupied by a big PDF Link, which will take you to a very different place if you tap it. For cases like this we have provided another way to turn the navigation menu on/off - a quick tap with three fingers anywhere on the screen.</p>
+			<p>You can switch between two <b>PDF displaying engines</b> - the &quot;fast&quot; one and the &quot;safe&quot; one. The safe engine is the original GoodReader's engine that was used in many versions prior to v.3.1. The newer fast engine shows smoother page zooming/panning, but consumes more memory, therefore may crash on certain files that can easily be opened with the original &quot;safe&quot; engine. However, it was noted that older engine loads pages faster for some PDF files. So try both these engines, and choose the one that you like more.</p>
+			<p>You can choose the level of quality for scanned PDF images with the <b>Higher quality images</b> switch in app settings, PDF section. Choosing higher quality images produces better-looking scans, but impacts performance noticeably. If scanned images is not your main concern, you can disable this switch to get a faster page rendering.</p>
+			<p>The <b>&quot;one page layout at a time&quot;</b> viewing model was chosen intentionally due to serious stability and performance issues. Read our <a href="#tipsturnpages">viewing tips</a> on how to turn pages.</p>
+			<p>You can temporarily lock screen autorotations if you feel that sudden rotations are a little annoying when you're reading in bed.</p>
+			<p>Use pinching gestures to zoom in or zoom out. Also use 1-finger double-tap (zoom in) and 2-fingers single tap (zoom out).</p>
+			<p>Choose between <b>Horizontal</b> and <b>Vertical page swiping</b> in <b>Application Settings</b>, <b>Viewing PDF files</b> section.</p>
+			<p><a href="#annots">Annotate</a> your PDF files and save your comments and drawings directly into a PDF file to share with others.</p>
+			<p><a href="#sign">Sign</a> documents with a precomposed signature.</p>
+			<p>Use <a href="#pagemgmt">Page Management</a> features to add, rearrange, rotate, delete, extract and email pages, to split files in halves and to append pages from other PDF files.</p>
+			<p>Select text by tapping and holding it, then use <b>Lookup</b> (magnifying glass button in the popup menu) to find a definition of a word in <b>Dictionary</b>, <b>Google</b> or <b>Wikipedia</b>. Select your preferred language for Wikipedia in app settings, Other Settings section.</p>
+			<p>Enable <b>pre-caching</b> of adjacent PDF pages in settings to create a better page turning feel. Be careful with this option, because it impacts memory consumption and performance, and may lead to eventual app crashes due to a low memory condition.</p>
+			<p>You can quickly jump back in case if you accidentally jumped to a wrong page or tapped a wrong link or bookmark. You can also jump forward after jumping back. To do that, swipe a page with three fingers either from left to right, or from right to left. Jumping back can also be achieved with <a href="#buttonsgoback">a special button</a>.</p>
+			<p>Use <a href="#reflow">PDF Reflow</a> feature to extract pure text from a PDF page and to comfortably read it with word wrap, without left/right scrolling and with the font size of your choice. Quickly switch back and forth between the Reflow mode and the original PDF page. This feature is not as dramatically helpful on iPad as it is on a tiny iPhone screen, but can still be useful.</p>
+			<p>Use <a href="#find">Find Text in PDF</a> feature to search for text.</p>
+			<p>Use <a href="#tapzones">Tap Zones</a> to quickly scroll a page in a certain direction.</p>
+
+			<table class="table">
+				<thead>
+					<tr>
+						<th>iPad only</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<p>Use configurable <a href="#doublepage">Double-Page Layout</a> feature to see double-page spreads at once.</p>
+							<p>Use <a href="#rotate">Rotate all pages</a> feature to fix incorrectly rotated scanned pages without actually modifying a file.</p>
+							<p>Use <a href="#buttonslockpage">Lock Page</a> button to lock any page movements and tap gestures. Use it if you're working in an environment where it is undesirable for accidental taps to take you away from an important page. When locked, all your taps and swipes will be ignored until you unlock the page. The only interaction allowed is pinching with two fingers for zooming/repositioning. There are also small buttons at the top of the screen for quickly changing pages.</p>
+							<p>When in the <a href="#buttonslockpage">Lock Page</a> mode, you can turn pages with a remote page turning device, such as <a href="http://www.airturn.com/279.html" target="_blank">AirTurn Bluetooth Page Turner</a>, or any other compatible foot pedal, or even a standard Bluetooth keyboard.</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<p>Use <a href="#crop">Crop Margins</a> feature to get rid of unnecessary page margins. Independent crop settings are available for odd and even pages.</p>
+
+			<p>Print your files on <b>AirPrint</b>-enabled printers</p>
+
+			<p>Use <a href="#horlock">Horizontal Scroll Lock</a> feature to isolate a single column of a text on the screen and prevent further left/right movement. This feature is not as dramatically helpful on iPad as it is on a tiny iPhone screen, but can still be useful.</p>
+			<p>Use <a href="#links">PDF Links</a> feature to follow hypertext links to different places in the same document, to other documents, or even to web-sites.</p>
+			<p>Use <a href="#bookmarks">Locations</a> feature to access your own named <b>Bookmarks</b>, <b>Table of Contents</b> (a.k.a. <b>Outlines</b>) and <b>Annotations Summary</b> list.</p>
+			<p>Use <a href="#daynight">Day / Night Mode</a> switch to quickly dim the screen for comfortable night reading.</p>
+			<p>Consult our <a href="gr-man-trouble.html#toppdf">Troubleshooting</a> guide if you're having problems opening PDF files.</p>
+
+			<p>&nbsp;<br><input class="btn btn-primary btn-scroll-to" type="button" onClick="location.href='#top'" value="Go up"></p>
+
+			<h2><a id="buttons"></a>Buttons and controls</h2>
+			<p></p>
+			<table class="table">
+				<tr>
+					<td valign="top" align="center"><img src="images/html/HTMLbtnDayNight.png" border="0" width="39"></td><td width="10px">&nbsp;</td>
+					<td valign="top"><b>Day / Night mode</b> switch. Quickly dims the screen for comfortable night reading.</td>
+				</tr>
+				<tr>
+					<td valign="top" align="center"><img src="images/html/HTMLbtnBack.png" border="0" width="39"></td><td width="10px">&nbsp;</td>
+					<td valign="top"><b>Go Back</b> button. If you accidentally jumped to a wrong page or tapped a wrong link or bookmark, just go back to the previous page with a button click. Memorizes every page change or link click. Up to 20 recent positions memorized.</td>
+				</tr>
+				<tr>
+					<td valign="top" align="center"><img src="images/html/HTMLbtnReflow.png" border="0" width="39"></td><td width="10px">&nbsp;</td>
+					<td valign="top"><a href="#reflow">PDF Reflow (Extract Pure Text)</a> feature. Extracts pure text from a PDF page to comfortably read it without left/right scrolling and with the font size of your choice. Allows to quickly switch back and forth between the Reflow mode and the original PDF page.</td>
+				</tr>
+				<tr>
+					<td valign="top" align="center"><img src="images/html/HTMLbtnRotatePages.png" border="0" width="39"></td><td width="10px">&nbsp;</td>
+					<td valign="top">iPad: <a href="#rotate">Rotate pages</a>. Useful for incorrectly rotated scans.</td>
+				</tr>
+				<tr>
+					<td valign="top" align="center"><img src="images/html/HTMLbtnDoublePage.png" border="0" width="39"></td><td width="10px">&nbsp;</td>
+					<td valign="top">iPad: configurable <a href="#doublepage">Double-Page Layout</a></td>
+				</tr>
+				<tr>
+					<td valign="top" align="center"><img src="images/html/HTMLbtnLockPage.png" border="0" width="39"></td><td width="10px">&nbsp;</td>
+					<td valign="top">
+						iPad: <b>Lock Page</b>. Use it to lock any page movements and tap gestures. The only gesture that will be allowed is zooming with two fingers, which, besides zooming, can also be used to fine-tune a locked viewing position. A small button panel will appear at the top, allowing you to turn pages and exit the page lock mode.<br/>
+						When in the page lock mode, you can turn pages with a remote page turning device, such as <a href="http://www.airturn.com/279.html" target="_blank">AirTurn Bluetooth Page Turner</a>, or any other compatible foot pedal, or even a standard Bluetooth keyboard. Use turning device's pedals or press arrow keys on a Bluetooth keyboard to turn pages. Press the Return key on your Bluetooth keyboard to exit the page lock mode.
+					</td>
+				</tr>
+				<tr>
+					<td valign="top" align="center"><img src="images/html/HTMLbtnCropPages.png" border="0" width="39"></td><td width="10px">&nbsp;</td>
+					<td valign="top">use <a href="#crop">Crop Margins</a> feature to get rid of unnecessary page margins that occupy precious screen space. Separate settings for odd and even pages.</td>
+				</tr>
+				<tr><td colspan="3">
+					<table class="table gr-border">
+						<thead>
+							<tr>
+								<td width="50%">iPad</td>
+								<td>iPhone</td>
+							</tr>
+						</thead>
+						<tbody>
+						<tr valign="top">
+							<td>
+								<table>
+									<tr>
+										<td valign="top" align="center"><img src="images/html/HTMLbtnBookmarks.png" border="0" width="39"></td>
+										<td valign="top"><a href="#bookmarks">Locations</a> feature. Use this button to access your own named <b>Bookmarks</b>, <b>Table of Contents</b> (a.k.a. <b>Outlines</b>) and <b>Annotations Summary</b> list.</td>
+									</tr>
+									<tr>
+										<td valign="top" align="center"><img src="images/html/HTMLbtnPages.png" border="0" width="39"></td>
+										<td valign="top"><b>Pages</b>. Use it to open the <a href="#pagemgmt">Page Management</a> panel. This panel will allow you to quickly go to a page by selecting its preview or entering its number. It will also allow you to add, rotate, rearrange, delete, extract and email individual pages, as well as split the file in halves and append pages from other PDF files.<br/>
+											When entering a page number, you can use both numeric and symbolic labels (i, ii, iii, etc.), if your file has them defined. If you enter a page number, it is treated as a logical one. However, if logical (relative) page numbers do not correspond to physical (absolute) page numbers in your particular file, you can tell GoodReader to treat a page number as an absolute one by prefixing it with a '@' character.<br/>
+											<b>Page Management</b> panel can also be opened by tapping the floating badge with a page number:<br/>
+											<img src="images/html/HTMLbtnPageNum.png" border="0" width="81">
+										</td>
+									</tr>
+									<tr>
+										<td valign="top" align="center"><img src="images/html/HTMLbtnFind.png" border="0" width="39"></td>
+										<td valign="top"><b>Find Text</b>. Use it to search for text. More details <a href="#find">here</a>.</td>
+									</tr>
+								</table>
+							</td>
+
+							<td>
+								<table>
+									<tr>
+										<td valign="top" align="center"><a id="buttonsmagnglass"></a><img src="images/html/HTMLbtnFind.png" border="0" width="39"></td>
+										<td valign="top">
+											Opens up a choice of actions:
+											<ul>
+												<li><b>Find Text</b>. Use it to search for text. More details <a href="#find">here</a>.</li>
+												<li><b>Pages</b>. Use it to open the <a href="#pagemgmt">Page Management</a> panel. This panel will allow you to quickly go to a page by selecting its preview or entering its number. It will also allow you to add, rotate, rearrange, delete, extract and email individual pages, as well as split the file in halves and append pages from other PDF files.<br/>
+													When entering a page number, you can use both numeric and symbolic labels (i, ii, iii, etc.), if your file has them defined. If you enter a page number, it is treated as a logical one. However, if logical (relative) page numbers do not correspond to physical (absolute) page numbers in your particular file, you can tell GoodReader to treat a page number as an absolute one by prefixing it with a '@' character.<br/>
+													<b>Page Management</b> panel can also be opened by tapping the floating badge with a page number:<br/>
+													<img src="images/html/HTMLbtnPageNum.png" border="0" width="81">
+												</li>
+												<li><a href="#bookmarks">Locations</a>. Use it to work with your own <b>Bookmarks</b>, with embedded <b>Table of Contents</b> (a.k.a. <b>Outlines</b>) and with <b>Annotations Summary</b> list.</li>
+											</ul>
+										</td>
+									</tr>
+								</table>
+							</td>
+
+						</tr>
+						</tbody>
+					</table>
+				</td></tr>
+				<tr height="10px"><td colspan="3">&nbsp;</td></tr>
+
+				<tr>
+					<td valign="top" align="center"><img src="images/html/HTMLbtnLockRotation.png" border="0" width="39"></td><td width="10px">&nbsp;</td>
+					<td valign="top">temporarily lock screen autorotations if you feel that sudden rotations are a little annoying when you're reading in bed</td>
+				</tr>
+				<tr>
+					<td valign="top" align="center"><img src="images/html/HTMLbtnHorScroll.png" border="0" width="39"></td><td width="10px">&nbsp;</td>
+					<td valign="top"><b>Horizontal Scroll Lock</b>. Use it to lock/unlock horizontal scrolling. Use it along with zooming to isolate a single column of text and hide the rest of the page behind screen boundaries. When the Lock is on, no matter how you drag your text with a finger, you will only move page vertically. And tapping any of the <a href="#tapzones">Tap Zones</a> will also result in vertical movements only.</td>
+				</tr>
+				<tr>
+					<td valign="top" align="center"><img src="images/html/HTMLbtnActions.png" border="0" width="39"></td><td width="10px">&nbsp;</td>
+					<td valign="top"><b>Actions</b>. Offers a choice of actions for a currently opened file - <b>Open In...</b>, <b>Flatten Copy</b>, <b>E-Mail File</b>, <b>E-Mail Annotations Summary</b>, <b>E-Mail File + Summary</b>, <b>Print File</b> and <b>Print Annotations Summary</b>.</td>
+				</tr>
+			</table>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0" class="TableText">
+				<tr height="1px"><td colspan="3">&nbsp;</td></tr>
+				<tr>
+					<td valign="top" align="center"><img src="images/html/HTMLpageSlider.png" border="0" width="106"></td><td width="10px">&nbsp;</td>
+					<td valign="top">Use this slider to whisk across pages in a large PDF file with a single gesture. Use side buttons to turn one page up or down.</td>
+				</tr>
+			</table>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0" class="TableText">
+				<tr height="1px"><td colspan="3">&nbsp;</td></tr>
+				<tr>
+					<td valign="top" align="center"><img src="images/html/HTMLbtnPageNum.png" border="0" width="81"></td><td width="10px">&nbsp;</td>
+					<td valign="top">
+						Tap this badge to open the <a href="#pagemgmt">Page Management</a> panel. This panel will allow you to quickly go to a page by selecting its preview or entering its number. It will also allow you to add, rotate, rearrange, delete, extract and email individual pages, as well as split the file in halves and append pages from other PDF files.<br/>
+						When entering a page number, you can use both numeric and symbolic labels (i, ii, iii, etc.), if your file has them defined. If you enter a page number, it is treated as a logical one. However, if logical (relative) page numbers do not correspond to physical (absolute) page numbers in your particular file, you can tell GoodReader to treat a page number as an absolute one by prefixing it with a '@' character.
+					</td>
+				</tr>
+			</table>
+
+			<p>&nbsp;<br><input class="btn btn-primary btn-scroll-to" type="button" onClick="location.href='#top'" value="Go up"></p>
+
+
+			<h2><a id="tips"></a><hr>Tips for reading, scrolling and zooming</h2>
+			<ul>
+				<li>Switch between two <b>PDF displaying engines</b> - the &quot;fast&quot; one and the &quot;safe&quot; one. The safe engine is the original GoodReader's engine that was used in many versions prior to v.3.1. The newer fast engine shows smoother page zooming/panning, but consumes more memory, therefore may crash on certain files that can easily be opened with the original &quot;safe&quot; engine. However, it was noted that older engine loads pages faster for some PDF files. So try both these engines, and choose the one that you like more.</li>
+				<li>Choose the level of quality for scanned PDF images with the <b>Higher quality images</b> switch in app settings, PDF section. Choosing higher quality images produces better-looking scans, but impacts performance noticeably. If scanned images is not your main concern, you can disable this switch to get a faster page rendering.</li>
+				<li>Use iOS's standard <b>dragging</b> and <b>pinching</b> gestures for scrolling and zooming.</li>
+				<li><b>Double-tap</b> the screen to zoom in. Quickly <b>tap</b> the screen with <b>two fingers</b> to zoom out.</li>
+				<li>Use <a href="#reflow">PDF Reflow (Extract Pure Text)</a> feature to extract pure text from a PDF page and read it without left/right scrolling and with the font size of your choice. This feature is not as dramatically helpful on iPad as it is on a tiny iPhone screen, but can still be useful.</li>
+				<li>iPhone: Use <a href="#tapzones">Tap Zones</a> to read wide text that doesn't fit on one screen.</li>
+				<li><a id="tipsturnpages"></a>Turning pages:
+					<ul>
+						<li>use <b>swiping gesture</b> to turn pages. Choose between <b>Horizontal</b> and <b>Vertical page swiping</b> in <b>Application Settings</b>, <b>Viewing PDF files</b> section.</li>
+						<li>use <a href="#tapzones">Tap Zones</a> to turn pages</li>
+					</ul>
+				</li>
+				<li>iPad: Use configurable <a href="#doublepage">Double-Page Layout</a> feature to see double-page spreads at once</li>
+				<li>Use <a href="#crop">Crop Margins</a> feature to get rid of unnecessary page margins. Independent crop settings are available for odd and even pages.</li>
+				<li>iPad: Use <a href="#rotate">Rotate all pages</a> feature to fix incorrectly rotated scanned pages without actually modifying a file</li>
+				<li>Use <a href="#horlock">Horizontal Scroll Lock</a> feature to isolate a single column of text and hide the rest of the page behind the screen boundaries. This feature is not as dramatically helpful on iPad as it is on a tiny iPhone screen, but can still be useful.</li>
+				<li>Use <b>Page Slider</b> to whisk across pages in a large PDF file with a single gesture</li>
+				<li>Use <b>Page Management</b> panel to quickly go to a desired page by tapping its preview or entering its number. The panel is accessible either via a special button or by tapping the floating badge with a page number. When entering page numbers, you can use both numeric and symbolic labels (i, ii, iii, etc.), if your file has them defined. If you enter a page number, it is treated as a logical one. However, if logical (relative) page numbers do not correspond to physical (absolute) page numbers in your particular file, you can tell GoodReader to treat a page number as an absolute one by prefixing it with a '@' character.</li>
+				<li>Use <a href="#links">PDF Links</a> to quickly jump to different places in a document, to open another document, or to visit a web-site. Tap a link briefly to trigger it.</li>
+				<li>Use <a href="#bookmarks">Locations</a> to work with your own <b>Bookmarks</b>, with embedded <b>Table of Contents</b> (a.k.a. <b>Outlines</b>) and with <b>Annotations Summary</b> list.</li>
+				<li>You can quickly jump back in case if you accidentally jumped to a wrong page or tapped a wrong link or bookmark. You can also jump forward after jumping back. To do that, swipe a page with three fingers either from left to right, or from right to left. Jumping back can also be achieved with <a href="#buttonsgoback">a special button</a>.</li>
+				<li>Use <a href="#find">Find Text in PDF</a> feature to find a text in a document.</li>
+				<li>iPad: Use <a href="#buttonslockpage">Lock Page</a> button to lock any page movements and tap gestures. Use it if you're working in an environment where it is undesirable for accidental taps to take you away from an important page. When locked, all your taps and swipes will be ignored until you unlock the page. The only interaction allowed is pinching with two fingers for zooming/repositioning. There are also small buttons at the top of the screen for quickly changing pages.</li>
+				<li>iPad: When in the <a href="#buttonslockpage">Lock Page</a> mode, you can turn pages with a remote page turning device, such as <a href="http://www.airturn.com/279.html" target="_blank">AirTurn Bluetooth Page Turner</a>, or any other compatible foot pedal, or even a standard Bluetooth keyboard.</li>
+				<li>Use <a href="#daynight">Day / Night mode</a> button to quickly dim the screen for a comfortable night reading.</li>
+				<li><a href="#flatten">Flatten annotations</a> to make sure that your recipients will be able to see them even with a very simple PDF viewer that doesn't support annotations, or to make sure that your annotations will not be edited later by someone else.</li>
+			</ul>
+
+			<p>&nbsp;<br><input class="btn btn-primary btn-scroll-to" type="button" onClick="location.href='#top'" value="Go up"></p>
+
+
+			<h2><a id="annots"></a><hr>PDF Annotations, Highlights and Markups</h2>
+			<p>You can view, create, edit and delete various kinds of PDF notes, drawings, highlights and markups.</p>
+			<p>All annotations that you create or edit in GoodReader - notes, highlights, markups, and drawings - are <b>saved in a PDF file</b>, so you will be able to see them later on a computer or in another copy of GoodReader on your colleague's device.</p>
+			<p>Two main gestures that you should use to work with annotations - <b>quick single tap</b>, and <b>tap &amp; hold</b>. Depending on where you tap (on a text, on an existing annotation, or on a free space on a page), different popup menus will be presented to you.</p>
+			<p><i>iPad only:</i> In addition to the popup menus, you can use the <b>Side Menu</b> that appears when the navigation menu is on. There's the &quot;pin&quot; button on that menu. Use it to force this menu to be always on-screen for some heavy annotating job, then close it when you're done.</p>
+			<p>To <b>edit</b> or <b>delete</b> an existing annotation, <b>tap</b> it briefly, or <b>tap and hold</b> it for a while. Two special cases to note: text note popups and highlights/markups. When you tap a text note, a default action (opening a note) is invoked right away. To access more options (deletion, color adjustment, etc.), tap and hold it for a while. On the contrary, when you tap and hold a highlight/markup, you activate a default action - text selection, which is more natural for an underlying text. To access special options for a highlight (deletion, color adjustment, etc.), you have to tap it briefly.</p>
+			<p>Just memorize the following very simple rule: one of two gestures (<b>quick tap</b> or <b>tap &amp; hold</b>) should always work. If one of them doesn't, try another.</p>
+			<p>
+				Besides self-explanatory text buttons, there are graphical buttons on the annotations menu:<br/>
+			<table border="0px" cellpadding="1px" cellspacing="1px" class="TableText">
+				<tr>
+					<td><img src="images/html/HTMLMenuBtnNote.png" border="0" width="39"></td><td>Popup note</td><td width="20px">&nbsp;</td>
+					<td><img src="images/html/HTMLMenuBtnHighlight.png" border="0" width="39"></td><td>Highlight</td><td width="20px">&nbsp;</td>
+					<td><img src="images/html/HTMLMenuBtnLine.png" border="0" width="39"></td><td>Line</td>
+				</tr>
+				<tr>
+					<td><img src="images/html/HTMLMenuBtnTypewriter.png" border="0" width="39"></td><td>Typewriter</td><td>&nbsp;</td>
+					<td><img src="images/html/HTMLMenuBtnUnderline.png" border="0" width="39"></td><td>Underline</td><td>&nbsp;</td>
+					<td><img src="images/html/HTMLMenuBtnArrow.png" border="0" width="39"></td><td>Arrow</td>
+				</tr>
+				<tr>
+					<td><img src="images/html/HTMLMenuBtnBookmark.png" border="0" width="39"></td><td>Add bookmark</td><td>&nbsp;</td>
+					<td><img src="images/html/HTMLMenuBtnSquiggly.png" border="0" width="39"></td><td>Squiggly underline</td><td>&nbsp;</td>
+					<td><img src="images/html/HTMLMenuBtnSquare.png" border="0" width="39"></td><td>Rectangle</td>
+				</tr>
+				<tr>
+					<td><img src="images/html/HTMLMenuBtnLookup.png" border="0" width="39"></td><td>Lookup (Dictionary,<br/>Google, Wikipedia)</td><td>&nbsp;</td>
+					<td><img src="images/html/HTMLMenuBtnCrossOut.png" border="0" width="39"></td><td>Strikeout</td><td>&nbsp;</td>
+					<td><img src="images/html/HTMLMenuBtnCircle.png" border="0" width="39"></td><td>Oval</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+					<td><img src="images/html/HTMLMenuBtnInsert.png" border="0" width="44"></td><td>Text insertion mark</td><td>&nbsp;</td>
+					<td><img src="images/html/HTMLMenuBtnFreehand.png" border="0" width="39"></td><td>Freehand drawing</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+					<td><img src="images/html/HTMLMenuBtnReplace.png" border="0" width="44"></td><td>Text replacement mark</td><td>&nbsp;</td>
+					<td><img src="images/html/HTMLMenuBtnEraser.png" border="0" width="39"></td><td>Eraser (for freehand drawings)</td>
+				</tr>
+			</table>
+			</p>
+			<p><i>iPad only:</i> Creating markups (highlights, underlines, etc.) works differently when done via the popup menus or via the Side Menu. While popup menus mark up a text that is already selected, using the Side Menu's markup buttons activates a special &quot;markup&quot; mode, in which you draw over a text with your finger to mark it up.</p>
+			<p>While you can move a note or drawing with a popup menu, there's an easier way to do it. Tap and hold a note or drawing for a while, then start moving it without releasing your finger.</p>
+			<p>
+				You can see a summary of all annotations in a file by opening <b>Locations</b> window with this button:<br/>
+			<table class="table gr-border">
+				<thead>
+					<tr><td>iPad</td><td>iPhone</td></tr>
+				</thead>
+				<tbody>
+				<tr valign="top">
+					<td style="padding:7px" align="center">
+						<table border="0" cellpadding="1" cellspacing="0">
+							<tr><td><img src="images/html/HTMLbtnBookmarks.png" border="0" width="39"></td></tr>
+						</table>
+					</td>
+					<td style="padding:7px" align="center">
+						<table border="0" cellpadding="1" cellspacing="0">
+							<tr><td><img src="images/html/HTMLbtnFind.png" border="0" width="39"></td></tr>
+						</table>
+					</td>
+				</tr>
+				</tbody>
+			</table>
+			Also you can send this summary via email, or print it via AirPrint with the <b>Actions</b> button:<br/>
+			<img src="images/html/HTMLbtnActions.png" border="0" width="39">
+			</p>
+			<p>Enter your name in <b>Author</b> field in application settings, PDF section, and all annotations that you create will be tagged with this name. This name will also appear in a summary list.</p>
+			<p>
+				<i>iPad only:</i> <b>Freehand drawing</b> tool can work in two different modes - a &quot;normal&quot; mode, in which you simply draw with your finger over a PDF page, and a special drawing mode with the <b>Handwriting Zoom Window</b>, which allows to draw tiny details in a large zoomed window, while seeing an overwiew of an entire page. Another helpful feature is the adjustable <b>Palm Rest</b> zone where you can put your palm while drawing.	Here are the buttons to control these features:<br/>
+			<table border="0px" cellpadding="10px" cellspacing="0px" class="TableText">
+				<tr>
+					<td>
+						<table border="0px" cellpadding="1px" cellspacing="1px" class="TableText">
+							<tr>
+								<td valign="top"><img src="images/html/HTMLMenuBtn_NoteAssist_1.png" border="0" width="119"></td>
+								<td valign="top">buttons to adjust the position of the zoom window on a PDF page</td>
+							</tr>
+						</table>
+						<table border="0px" cellpadding="1px" cellspacing="1px" class="TableText">
+							<tr>
+								<td valign="top"><img src="images/html/HTMLMenuBtn_NoteAssist_2.png" border="0" width="71"></td>
+								<td valign="top"><b>Undo</b> and <b>Redo</b> buttons</td>
+							</tr>
+						</table>
+						<table border="0px" cellpadding="1px" cellspacing="1px" class="TableText">
+							<tr>
+								<td valign="top"><img src="images/html/HTMLMenuBtn_NoteAssist_3.png" border="0" width="36"></td>
+								<td valign="top">toggles between drawing modes - normal and zoom mode</td>
+							</tr>
+							<tr>
+								<td valign="top"><img src="images/html/HTMLMenuBtn_NoteAssist_4.png" border="0" width="36"></td>
+								<td valign="top">toggles the adjustable <b>Palm Rest</b> zone on and off</td>
+							</tr>
+							<tr>
+								<td valign="top"><img src="images/html/HTMLMenuBtn_NoteAssist_5.png" border="0" width="36"></td>
+								<td valign="top">
+									when dragged, adjusts the size of the <b>Palm Rest</b> zone,<br/>
+									when tapped, toggles the entire combination of zoom window and palm rest zone on and off
+								</td>
+							</tr>
+							<tr>
+								<td valign="top"><img src="images/html/HTMLMenuBtn_NoteAssist_6.png" border="0" width="36"></td>
+								<td valign="top">drag this arrow to adjust the size of the <b>Auto Advance</b> zone. When you're drawing to the right of this arrow, the position of the zoom window on a PDF page is advanced to the right automatically</td>
+							</tr>
+							<tr>
+								<td colspan="2" valign="top">Pinching with two fingers inside the zoom window scales its relative size on a PDF page.</td>
+							</tr>
+							<tr>
+								<td colspan="2" valign="top"><b>Palm Rest</b> zone doesn't work well with system-wide <b>Multitasking Gestures</b> (swipes with four fingers to reveal multitasking bar, etc.). When putting your wrist on the palm rest zone, the system will intercept this event and often confuse it with a four fingers swipe. If you plan to use Plam Rest zone, it is recommended to switch Multitasking Gestures off in main device settings.</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			</p>
+			<p>When doing a freehand draw in a normal mode, you can zoom or pan a page with two fingers. It can be useful when creating a long handwritten note that doesn't fit on one screen. <i>iPad only:</i> The same gesture works in the &quot;markup&quot; mode that is activated via the Side Menu's markup buttons - Highlight, Underline, etc.</p>
+			<p>All notes, highlights, markups, and drawings created <b>outside</b> GoodReader, and properly stored in a PDF file, can be viewed or edited in GoodReader.</p>
+			<p>Many types of annotations, including drawings (lines, arrows, freehand drawings, etc.), can have a text comment associated with them. GoodReader allows you to view those comments and edit almost all of them.</p>
+			<p>Types of annotations that you can <b>create and edit</b> in GoodReader: popup (&quot;sticky&quot;) notes with 7 different icons, text highlights, typewriter notes, text boxes with callouts, freehand drawings, lines, arrows, rectangles, ovals, &quot;cloudy&quot; shapes, text underlines (including &quot;squiggly&quot; ones), text deletion marks (strikeouts), text insertion marks, text replacement marks. You can freely adjust color of all of the above.</p>
+			<p>Other types of annotations that you can <b>view</b> in GoodReader: polygons and polylines, rubber stamps, file attachments. All annotations that can be <b>viewed</b>, can also be <b>deleted</b>. In addition, polygons and polylines can be edited in a limited fashion (color, placement, size, etc.).</p>
+			<p>You can <b>extract files</b> from PDF file attachments.</p>
+			<p>Please note that PDF annotations are bound to a particular page. Therefore you will not be able to draw across pages, even if you're currently reading a PDF file in a double-page mode.</p>
+			<p><i>Note about Mail app.</i> You will not be able to see your annotations in iPhone/iPad's standard Mail app. It doesn't mean that annotations are missing, they're there. It's just Mail app is not capable of showing them. Mail app only shows you a basic preview of what's inside a file. PDF Annotations is an advanced feature that is not a part of a &quot;standard&quot; PDF content. While it's not a problem on a computer (most computer PDF viewers do support annotations, Adobe Acrobat Reader and Mac's Preview are the most popular free ones), on iPad/iPhone/iPod it is necessary to use an advanced PDF viewer with explicit support for PDF Annotations (like GoodReader app, or a number of other apps). Another solution is to <a href="#flatten">flatten a file</a> before sending it via email.</p>
+			<p><i>Note about Preview app on Mac computers.</i> While Preview app shows most of annotation types, it sometimes has trouble showing squiggly underlines, text insertion/replacement marks and callouts. If you're on a Mac, and you need to read a file with those annotation types, try Adobe Acrobat Reader app. Another solution is to <a href="#flatten">flatten a file</a> before sending it to a computer.</p>
+
+			<p>&nbsp;<br><input class="btn btn-primary btn-scroll-to" type="button" onClick="location.href='#top'" value="Go up"></p>
+
+
+			<h2><a id="flatten"></a><hr>Flattening annotations</h2>
+			<p>&quot;Flattening&quot; is the process of embedding PDF annotations into the main PDF page body, making them a part of a normal graphical page content. You may want to do this for the following reasons:</p>
+			<ul>
+				<li>simple PDF viewers (like the one used in standard iPhone/iPad's Mail and Safari apps) aren't always capable of showing PDF annotations. PDF annotations is an advanced feature, and those simple viewers show only the basic PDF page content. Flattening annotations solves this problem, making annotations visible in all PDF-capable apps, including very simple ones.</li>
+				<li>sometimes you may want to prevent your annotations from being edited by someone else. Flattening makes annotations non-editable, because they're not annotations anymore. They become simple drawings, the same as all other basic drawings on a PDF page.</li>
+			</ul>
+			<p>Flattening option will be offered to you every time you're trying to email a single PDF file or send it to another app via the &quot;Open In...&quot; button. It is also available as a separate <b>Flatten Copy</b> command when viewing a PDF file.</p>
+			<p>GoodReader takes a smart approach to file flattening. It gives your recipient a chance to <b>&quot;unflatten&quot;</b> a file upon receiving (this can only be done in GoodReader app, other apps can't unflatten what was flattened by GoodReader). But this option must be explicitly enabled in GoodReader's settings (on a device that was used for flattening). The default setting is <b>not</b> to allow unflattening, to prevent your annotations from being edited by someone else. Please also note that if a recipient somehow edits a flattened file before unflattening it (by adding new annotations, for instance), the ability to unflatten previous annotations is lost.</p>
+
+			<p>&nbsp;<br><input class="btn btn-primary btn-scroll-to" type="button" onClick="location.href='#top'" value="Go up"></p>
+
+
+			<h2><a id="sign"></a><hr>Sign documents</h2>
+			<p>You can sign PDF documents with precomposed signatures:</p>
+			<ul>
+				<li>tap-and-hold on an empty spot on a PDF page</li>
+				<li>select "Sign" from the popup menu</li>
+				<li>if this is your first use of Signatures feature, create one or more precomposed signatures (up to 4 on an iPad, up to 2 on an iPhone)</li>
+				<li>if you've alredy created precomposed signatures, select one of them from the menu</li>
+				<li>use Touch ID to protect signatures from unauthorized use</li>
+				<li>your precomposed signatures are stored on a device in an encrypted form, never uploaded anywhere and never backed up with a device backup</li>
+			</ul>
+
+			<p>&nbsp;<br><input class="btn btn-primary btn-scroll-to" type="button" onClick="location.href='#top'" value="Go up"></p>
+
+
+			<h2><a id="pagemgmt"></a><hr>Page Management (adding, deleting, extracting, etc.)</h2>
+			<p>Use <b>Pages</b> button to open a PDF Page Management panel:</p>
+			<table class="table gr-border">
+				<thead>
+					<tr><td>iPad</td><td>iPhone</td></tr>
+				</thead>
+				<tbody>
+				<tr valign="top">
+					<td style="padding:7px" align="center">
+						<table border="0" cellpadding="1" cellspacing="0">
+							<tr><td><img src="images/html/HTMLbtnPages.png" border="0" width="39"></td></tr>
+						</table>
+					</td>
+					<td style="padding:7px" align="center">
+						<table border="0" cellpadding="1" cellspacing="0">
+							<tr><td><img src="images/html/HTMLbtnFind.png" border="0" width="39"></td></tr>
+						</table>
+					</td>
+				</tr>
+				</tbody>
+			</table>
+			<p>With this panel you can tap a page preview or enter a page number to quickly open a desired page.</p>
+			<p>In the editing mode Page Management panel also allows you to add, rearrange, rotate, delete, extract and email individual pages, to split files in halves and to append pages from other PDF files.</p>
+			<p><i>Note on page rotations.</i> When rotating individual pages with Page Management panel, you are actually modifying the file, making your changes permanent and visible on all devices to which you will be sending this file later. This is not the same as <a href="#rotate">Rotate all pages</a> button in the viewer, which rotates the entire file, but does it locally, for viewing in GoodReader only, not modifying the file in any way.</p>
+			<p><b>Important security alert.</b> Please note that deleting a page from a file simply reindexes page references, it doesn't actually remove the graphical page information from a file. So if you have a sensitive information on a page and want to delete it in order to send the file to an unauthorized person, know that a determined attacker would be able to extract a deleted page from such file. If security is a concern, we advise to find some other way to pass the information to unauthorized recipients.</p>
+
+			<p>&nbsp;<br><input class="btn btn-primary btn-scroll-to" type="button" onClick="location.href='#top'" value="Go up"></p>
+
+
+			<h2><a id="reflow"></a><hr>PDF Reflow (Extracting Pure Text)</h2>
+			<p><img src="images/html/HTMLbtnReflow.png" border="0" width="39"></p>
+			<p>PDF Reflow feature allows you to extract pure text from a PDF page to view it as a simple <a href="gr-man-view-txt.html">TXT file</a>, without left/right scrolling and with the font size of your choice.</p>
+			<p>This feature is not as dramatically helpful on iPad as it is on a tiny iPhone screen, but can still be useful.</p>
+			<p>Unlike with TXT files you don't have to choose the correct text encoding to view reflowed text, all necessary text encoding is chosen internally in this case. All other parameters that you normally adjust for reading TXT files in <b>Application Settings</b> apply to this mode.</p>
+			<p>Use all reading techniques that you normally use for reading TXT files, including <a href="gr-man-view-txt.html#autoscroll">Autoscroll</a>.</p>
+			<p>PDF Reflow is done on page-by-page basis due to performance reasons. So you will only see the text from the current PDF page in Reflow mode. However, all techniques for turning PDF pages apply to Reflow mode - you can turn reflowed pages by swiping, by tapping or by using Turn Page buttons. Please note that when you turn page in Reflow mode, the corresponding page in the original PDF mode is also turned, so two viewing modes are always in sync page-wise.</p>
+			<p>
+				While being in Reflow mode, you can copy the entire text of a PDF page to clipboard by pressing this button:<br>
+				<img src="images/html/HTMLbtnReflowCopyText.png" border="0" width="39">
+			</p>
+			<p>If <a href="gr-man-view-txt.html#autoscroll">Autoscroll</a> is on and you're turning a page, autoscrolling will continue after 3 seconds pause - GoodReader lets you catch up with first few lines of text.</p>
+			<p>You can easily go back to the original PDF page by pressing back button in navigation menu. For your convenience, we have reserved the same zone of the screen for the same purpose when navigation menu is off. Just tap where the back button is supposed to be, and you'll get back to the original PDF page.</p>
+			<p>Please note that scanned page is not a text, it's a picture, and there's nothing to extract. However, modern sophisticated PDF creating applications provide OCR (optical character recognition) information when you create a PDF from scanned pictures. In such cases reflowing may be possible.</p>
+			<p>Please note that text extracted from a PDF page doesn't necessarily have the same grouping order as you visually see it on a page. Text lines may be mixed up. GoodReader extracts text as it is encoded inside PDF file, and it's up to PDF creator to encode text paragraphs in the correct order, which doesn't always happen.</p>
+			<p>Please note that PDF Reflow is a very experimental feature. The correct extraction of text is not always possible. The PDF format allows to omit information that would allow to extract encoded text. So there are many PDF files, which you can read in graphic mode, but extracting text from them may produce unexpected results. For example, PDF format allows to specify the exact page coordinates of every single character, therefore many PDF files do not include whitespace or line-break characters, making it very hard to determine word-breaks and line-breaks. We have implemented a very sophisticated heuristic algorithm in GoodReader that makes guesses about word-breaks and line-breaks depending on letter-positioning on a page. Although we did huge amount of testing and we're proud to say that GoodReader handles most of cases well, there's still a chance of breaking words and lines incorrectly.</p>
+			<p>There are a few options in <b>Application Settings</b> that help break lines correctly depending on a text formatting style:</p>
+			<ul>
+				<li><b>Double-break per paragraph</b>. Inserts two line-breaks between groups of lines that are distant from each other (considered as paragraphs). Treats a group of close lines as a continuous text. Useful for book-like or article-like formatting. <b>Larger line spacing</b> switch helps determining which lines are &quot;close&quot; to each other, and which are not. Many Asian texts require larger line spacing option to be on.</li>
+				<li><b>Single break per paragraph</b>. The same as previous setting, but inserts a single line-break between paragraphs.</li>
+				<li><b>Break every line</b>. Inserts line-break at the end of every visual line. Useful with tables, where lines are close to each other, making it look like it's a single paragraph, but all lines should be separated from each other anyway.</li>
+				<li><b>No line-breaks</b>. Treats all text on a page as a continous text stream. Use it if all other options produce undesirable result.</li>
+			</ul>
+			<p>After changing line-breaking option in <b>Application Settings</b> you have to close PDF Reflow view, if it was open, and reflow the text again.</p>
+			<p>Notice for <b>right-to-left</b> readers (Hebrew, Arabic, etc.). Some PDF files with right-to-left fonts instead of encoding text as they should - from right to left - actually contain text stored in left-to-right (i.e. reversed) order. GoodReader extracts text in the order as it appears in PDF file, which makes it look backwards in Reflow mode. We're still working on this issue. Please keep in mind that this problem is created by PDF creating software, which doesn't store text inside PDF in the correct order.</p>
+
+			<p>&nbsp;<br><input class="btn btn-primary btn-scroll-to" type="button" onClick="location.href='#top'" value="Go up"></p>
+
+
+			<h2><a id="copytext"></a><hr>Copying text from a PDF page</h2>
+			<p>To copy a piece of text from a PDF page you have to select it first. To activate text selection mode tap on a text and hold your finger for a while.</p>
+			<p>Some PDF files contain scanned images that look like text, but they're not, they're actually pictures. You need to have a real text defined in a PDF file to be able to select it.</p>
+
+			<p>&nbsp;<br><input class="btn btn-primary btn-scroll-to" type="button" onClick="location.href='#top'" value="Go up"></p>
+
+
+			<h2><a id="find"></a><hr>Find Text in PDF</h2>
+			<p><img src="images/html/HTMLbtnFind.png" border="0" width="39"></p>
+			<p>Use this button to activate the <b>Find Text</b> feature and to enter a string to search, or to select one of 20 previously searched strings. The search operation is performed starting from the current PDF page. The found string is highlighted in inverse colors.</p>
+			<p><img src="images/html/HTMLfindSubbuttons.png" border="0" width="171"></p>
+			<p>This button bar pops up when something was found with the <b>Find</b> feature. The buttons are: <b>Find Previous</b> (backward search), <b>Find Next</b> and <b>Clear Find Results</b>. The first two buttons perform a search starting from the highlighted position in respective direction. The third button removes highlight from the found text and hides this button bar. You don't need to clear find results to perform a new search using the main <b>Find</b> feature. The new highlighted search result will automatically replace the old one.</p>
+			<p>If you want to enlarge the found text without hiding navigation menu, double-tap somewhere near found text. Double-tapping not just zooms in, but it also brings the double-tapped point to the center of the screen.</p>
+			<p><b>Important notice</b> about finding text in PDF files. PDF files don't have a continuous text flow, like text files do. PDFs are more like a graphical program with instructions on where to put certain letters on a page. This leads to the following inconveniences when searching for text in PDF files:</p>
+			<ul>
+				<li>inside a PDF file text may be grouped in a very different order than you see it visually, therefore the text at the visual beginning of a page may be found later than the text at the visual end of a page</li>
+				<li>although many PDF files do have whitespace characters encoded along with text, however, since whitespace character doesn't produce any graphical instructions, some PDF files omit them, making it hard to determine words when searching for text. Try to avoid whitespace characters in search strings, it may lead to incorrect find results.</li>
+			</ul>
+			<p>Notice for <b>right-to-left</b> readers (Hebrew, Arabic, etc.). Some PDF files with right-to-left fonts actually contain characters stored in left-to-right (i.e. reversed) order. To be able to find text in such files, the search string must be entered backwards. Use the <b>Flip search string</b> switch in <b>PDF</b> section of <b>Application Settings</b> to enter search string in readable form, and it will be flipped backwards internally during the search.</p>
+
+			<p>&nbsp;<br><input class="btn btn-primary btn-scroll-to" type="button" onClick="location.href='#top'" value="Go up"></p>
+
+
+			<h2><a id="tapzones"></a><hr>Tap Zones</h2>
+			<p>Introducing <b>Tap Zones</b> scheme. The screen is divided into several zones which trigger different actions when you quickly tap them.</p>
+			<p>Because page scrolling is not a very necessary thing on a larger iPad screen, we have introduced new <b>iPad-style Tap Zones</b>. However, old <b>iPhone-style Tap Zones</b> are still available in <b>Application Settings</b>, <b>Viewing PDF files</b> section for those who got used to them.</p>
+			<table border="0" cellspacing="0" cellpadding="0" class="TableText">
+				<tr><td><b>iPad-style Tap Zones:</b></td><td width="20px">&nbsp;</td><td><b>iPhone-style Tap Zones (also available in iPad version):</b></td></tr>
+				<tr>
+					<td><img src="images/html/HTMLtapZones_iPad.png" border="0" width="324"></td>
+					<td>&nbsp;</td>
+					<td><img src="images/html/HTMLtapZones_iPhone.png" border="0" width="324"></td>
+				</tr>
+			</table>
+
+
+			<table width="100%" border="0" cellspacing="0" cellpadding="0" class="TableText">
+				<tr>
+					<td valign="top" align="center"><b>Middle zone</b></td><td width="10px">&nbsp;</td>
+					<td valign="top">shows and hides navigation menu. Use top left navigation button from that menu to close the current file and to go back to the file list view.
+					</td>
+				</tr>
+				<tr height="10px"><td colspan="3">&nbsp;</td></tr>
+				<tr>
+					<td valign="top" align="center" width="140px"><img src="images/html/HTMLzoneLeft_iPad.png" border="0" width="34"><img src="images/html/HTMLzoneRight_iPad.png" border="0" width="34"><img src="images/html/HTMLzoneUp.png" border="0" width="34"><img src="images/html/HTMLzoneDown.png" border="0" width="34"></td><td width="10px">&nbsp;</td>
+					<td valign="top">
+						<ol>
+							<li>if you're not at the edge of a page, then scrolls one screen in the corresponding direction</li>
+							<li>if you are at the edge of a page, and scrolling in that direction would turn the page, then turns it</li>
+						</ol>
+					</td>
+				</tr>
+				<tr height="10px"><td colspan="3">&nbsp;</td></tr>
+				<tr>
+					<td valign="top" align="center"><img src="images/html/HTMLzoneRight.png" border="0" width="57"></td><td width="10px">&nbsp;</td>
+					<td valign="top">this tap zone is useful when you have a lot of very wide text lines and you need to scroll horizontally from left to right several times (one time per each line to read), without moving vertically. It works this way:
+						<ol>
+							<li>if you're not at the right margin of the page, then scrolls one screen to the right</li>
+							<li>if you are at the right margin of the page, then rewinds back to the left margin of the page without moving vertically</li>
+						</ol>
+					</td>
+				</tr>
+				<tr height="10px"><td colspan="3">&nbsp;</td></tr>
+				<tr>
+					<td valign="top" align="center"><img src="images/html/HTMLzoneRightDown.png" border="0" width="49"></td><td width="10px">&nbsp;</td>
+					<td valign="top">this tap zone is the addition to the previous zone. You use it when you read the last line of a wide text. It scrolls to the right until it reaches the right margin of the page, then it rewinds to the left and scrolls one screen down. Works sort of like Return key of a mechanical typewriter.
+					</td>
+				</tr>
+				<tr height="10px"><td colspan="3">&nbsp;</td></tr>
+				<tr>
+					<td valign="top" align="center"><img src="images/html/HTMLzoneLeft.png" border="0" width="57"></td><td width="10px">&nbsp;</td>
+					<td valign="top">this tap zone does the opposite thing to its right-arrow counterpart.
+					</td>
+				</tr>
+				<tr height="10px"><td colspan="3">&nbsp;</td></tr>
+				<tr>
+					<td valign="top" align="center"><img src="images/html/HTMLzoneLeftUp.png" border="0" width="49"></td><td width="10px">&nbsp;</td>
+					<td valign="top">this tap zone does the opposite thing to its right-arrow counterpart.
+					</td>
+				</tr>
+			</table>
+			<p>You can always bring up the reminder of Tap Zones locations using the <b>Help</b> button on the navigation menu.</p>
+
+			<p>&nbsp;<br><input class="btn btn-primary btn-scroll-to" type="button" onClick="location.href='#top'" value="Go up"></p>
+
+
+			<p><a id="doublepage"></a><hr></p>
+			<table class="table gr-border">
+				<thead>
+				<tr><td>iPad only</td></tr>
+				</thead>
+				<tbody>
+				<tr><td>
+					<table width="100%" border="0" cellpadding="1" cellspacing="0">
+						<tr><td><h2>Double-Page Layout</h2></td></tr>
+						<tr><td><img src="images/html/HTMLDoublePageMenu-iPad.png" border="0" width="335"></td></tr>
+						<tr><td>&nbsp;</td></tr>
+						<tr><td>Select one of the three page layout modes. This setting is memorized on per file basis. Please note that double-page layout increases the amount of operating memory being used. So if you're experiencing occasional out-of-memory crashes, the first thing to do is to disable double-page layout for a problematic file.</td></tr>
+						<tr><td>&nbsp;</td></tr>
+						<tr><td>Because having a double-page layout makes vertical page turning inappropriate, horizontal page swipe is automatically activated, regardless of the <b>Horizontal swipe</b> setting in Application Settings. This also effectively disables the <a href="#horlock">Horizontal Scroll Lock</a> feature, because this feature only makes sense with vertical page turning.</td></tr>
+						<tr><td>&nbsp;</td></tr>
+					</table>
+				</td></tr>
+				</tbody>
+			</table>
+
+			<p>&nbsp;<br><input class="btn btn-primary btn-scroll-to" type="button" onClick="location.href='#top'" value="Go up"></p>
+
+
+			<h2><a id="crop"></a><hr>Crop Margins</h2>
+			<p><img src="images/html/HTMLbtnCropPages.png" border="0" width="39"></p>
+			<p>If your file has large unnecessary page margins, you can get rid of them by cropping them out with this button. Set crop margins any way you like them. You can even define different crops for odd and even pages. Crop settings are memorized on per file basis.</p>
+			<p>While adjusting crop margins, use the <b>&quot;To cur.view&quot;</b> button (short for <b>&quot;Crop to current view&quot;</b>) to crop with respect to a screen's aspect ratio.  Zoom in and pan with two fingers to whatever you'd like to see on the screen after the cropping, and this button will crop out the rest, making the cropped page's aspect ratio match the screen's one.</p>
+
+			<p>&nbsp;<br><input class="btn btn-primary btn-scroll-to" type="button" onClick="location.href='#top'" value="Go up"></p>
+
+
+			<p><a id="rotate"></a><hr></p>
+			<table class="table gr-border">
+				<thead>
+					<tr><td>iPad only</td></tr>
+				</thead>
+				<tbody>
+				<tr><td>
+					<table width="100%" border="0" cellpadding="1" cellspacing="0">
+						<tr><td><h2>Rotate All Pages</h2></td></tr>
+						<tr><td><img src="images/html/HTMLRotatePagesMenu-iPad.png" border="0" width="286"></td></tr>
+						<tr><td>&nbsp;</td></tr>
+						<tr><td>If your file is a set of incorrectly rotated scanned pages, rotate your entire file any way you want. This setting is memorized on per file basis.</td></tr>
+						<tr><td>&nbsp;</td></tr>
+						<tr><td>Note that this rotation method does the rotation locally, for viewing in GoodReader only, not modifying the file in any way. This is not the same as rotating individual pages using <a href="#pagemgmt">Page Management</a> panel, which actually modifies the file, making your changes permanent and visible on all devices to which you will be sending this file later.</td></tr>
+					</table>
+				</td></tr>
+				</tbody>
+			</table>
+
+			<p>&nbsp;<br><input class="btn btn-primary btn-scroll-to" type="button" onClick="location.href='#top'" value="Go up"></p>
+
+
+			<h2><a id="precaching"></a><hr>Pre-caching of adjacent pages</h2>
+			<p>GoodReader pre-caches adjacent pages to eliminate the need to wait for the next page to render when turning pages. Although it creates a more natural page turning feel, it also increases the amount of operating memory being used. Therefore we provide the ability to turn pre-caching off in <b>Application Settings</b>, <b>Viewing PDF files</b> section, so you could turn it off if you experience occasional out-of-memory crashes with heavy graphical files.</p>
+
+			<p>&nbsp;<br><input class="btn btn-primary btn-scroll-to" type="button" onClick="location.href='#top'" value="Go up"></p>
+
+
+			<h2><a id="horlock"></a><hr>Horizontal Scroll Lock</h2>
+			<p><img src="images/html/HTMLbtnHorScroll.png" border="0" width="39"></p>
+			<p>Use it to lock/unlock horizontal scrolling. Use it along with zooming to isolate a single column of text and hide the rest of the page behind screen boundaries. When the Lock is on, no matter how you drag your text with a finger, you will only move page vertically. And tapping any of the <a href="#tapzones">Tap Zones</a> will also result in vertical movements only.</p>
+			<p>This feature is not as dramatically helpful on iPad as it is on a tiny iPhone screen, but can still be useful.</p>
+			<p>If the Lock is on and you want to adjust your zooming/position, there's no need to unlock, adjust and lock again. Simply use pinching to adjust your zooming and position (lock will be temporarily removed during pinching). When you will release your fingers, the lock will be automatically restored.</p>
+			<p>This feature only makes sense when you do vertical page turns. Therefore it is automatically disabled when you either turn the <b>Horizontal swipe</b> option on in Application Settings, or when you select a double-page layout for a file (selecting a double-page layout automatically turns horizontal page swiping on).</p>
+
+			<p>&nbsp;<br><input class="btn btn-primary btn-scroll-to" type="button" onClick="location.href='#top'" value="Go up"></p>
+
+
+			<h2><a id="links"></a><hr>PDF Links (tappable hyperlinks)</h2>
+			<p>Use links in PDF files to quickly jump to different places in a document, to open another document, or to visit a web-site.</p>
+			<p>Tap a link briefly to trigger it.</p>
+			<p>When you tap a link, it is highlighted to give you a visual clue that it's a link.</p>
+			<p>Use <b>Show link bounds</b> switch in <b>Viewing PDF files</b> section of <b>Application Settings</b> if you like to see all links surrounded by a thin line to indicate that it's a link.</p>
+
+			<p>&nbsp;<br><input class="btn btn-primary btn-scroll-to" type="button" onClick="location.href='#top'" value="Go up"></p>
+
+
+			<h2><a id="bookmarks"></a><hr>Locations - Bookmarks, Table of Contents (Outlines), Annotations Summary</h2>
+			<table class="table gr-border">
+				<thead>
+				<tr><td>iPad</td><td>iPhone</td></tr>
+				</thead>
+				<tbody>
+				<tr valign="top">
+					<td style="padding:7px" align="center">
+						<table border="0" cellpadding="1" cellspacing="0">
+							<tr><td><img src="images/html/HTMLbtnBookmarks.png" border="0" width="39"></td></tr>
+						</table>
+					</td>
+					<td style="padding:7px" align="center">
+						<table border="0" cellpadding="1" cellspacing="0">
+							<tr><td><img src="images/html/HTMLbtnFind.png" border="0" width="39"></td></tr>
+						</table>
+					</td>
+				</tr>
+				</tbody>
+			</table>
+			<p>Use this button to open the <b>Locations</b> window, where you can select different modes - <b>Bookmarks</b>, <b>Outlines</b> and <b>Annotations Summary</b> list.</p>
+			<p>There are 2 types of Bookmarks - the ones created by you, and the ones embedded into a PDF file (also known as <b>Table of Contents</b>, <b>Sidebar Reference</b> or <b>Outlines</b>).</p>
+			<p>
+				Creating <b>your own bookmark</b> memorizes current location in an opened file. Use the <b>Edit</b> button to delete or rearrange your own bookmarks. Swipe a bookmark to delete it. Use the blue arrow button to edit the name of a bookmark. To create a new bookmark, either use this Bookmarks window (there's the <b>Add Bookmark</b> button), or tap-and-hold on a PDF page for the annotating menu to come up, or use the Side Menu. In the last two cases look for this button:<br/>
+				<img src="images/html/HTMLMenuBtnBookmark.png" border="0" width="39">
+			</p>
+			<p><b>Embedded bookmarks (Outlines)</b> are structurized in a tree hierarchy. To save precious screen space, outlines only for the current level are shown. To see outlines of the next level, press a blue arrow to the right of the outline of interest.</p>
+			<p>Select a bookmark or an entry in annotations summary list to instantly go to its location.</p>
+
+			<p>&nbsp;<br><input class="btn btn-primary btn-scroll-to" type="button" onClick="location.href='#top'" value="Go up"></p>
+
+
+			<h2><a id="daynight"></a><hr>Day / Night reading mode</h2>
+			<p><img src="images/html/HTMLbtnDayNight.png" border="0" width="39"></p>
+			<p><b>Day / Night mode</b> switch quickly dims the screen for comfortable night reading.</p>
+
+			<p>&nbsp;<br><input class="btn btn-primary btn-scroll-to" type="button" onClick="location.href='#top'" value="Go up"></p>
+
+
+			<h2><a id="sendfiles"></a><hr>Help us help you</h2>
+			<p>GoodReader was dramatically improved since its earlier versions. The only thing that made it possible is user feedback. Our customers sent us a lot of problematic files, we studied those files, came to certain conclusions, and finally we were able to write a better code. We can't improve our application if you don't talk to us. We might actually solve the problem if you tell us about it! So we encourage you to send us as much feedback or feature requests as possible. Help us help you!</p>
+
+			<p>&nbsp;<br><input class="btn btn-primary btn-scroll-to" type="button" onClick="location.href='#top'" value="Go up"></p>
+
+		</div>
+	</div>
+
+
+</div>
+<div class="gr-footer">
+	<div class="container">
+		<div class="gr-row row">
+			<div class="col-lg-3">
+				<div class="gr-social-container">
+					<img src="images/logo-goodreader-footer.png" width="190" height="49" alt="" title="">
+					<div class="gr-social-footer">
+						<a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></a>
+						<a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a>
+					</div>
+					<div class="gr-subscribe">
+						<p>Subscribe</p>
+						<div class="gr-footer-form-group input-group">
+							<input class="form-control" type="text" placeholder="Your Email">
+							<span class="input-group-btn">
+								<button class="btn btn-default" class="btn btn-primary btn-scroll-to" type="button">
+									<i class="fa fa-chevron-circle-right"></i>
+								</button>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<ul class="gr-footer-nav">
+					<li class="col-lg-4">
+						<a href="#">About</a>
+						<div class="gr-footer-nav__line"></div>
+						<ul>
+							<li><a href="#">Overview</a></li>
+							<li><a href="#">End User License Agreement (EULA)</a></li>
+							<li><a href="#">Updates History</a></li>
+						</ul>
+					</li>
+					<li class="col-lg-4">
+						<a href="#">User Manual</a>
+						<div class="gr-footer-nav__line"></div>
+						<ul>
+							<li><a href="#">Introduction</a></li>
+							<li><a href="#">How-Tos</a></li>
+							<li><a href="#">Viewing Files</a>
+								<ul>
+									<li><a href="#">PDF</a></li>
+									<li><a href="#">TXT</a></li>
+									<li><a href="#">Pictures</a></li>
+									<li><a href="#">Audio & Video</a></li>
+									<li><a href="#">Other Files</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Transferring Files to GoodReader</a>
+								<ul>
+									<li><a href="#">USB File Transfer (computer-to-iPhone)</a></li>
+									<li><a href="#">WiFi File Transfer (computer-to-iPhone)</a></li>
+									<li><a href="#">Web Downloads (Internet-to-iPhone)</a></li>
+									<li><a href="#">Accessing Servers, E-mail attachment</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Manage Files, Send E-mail</a></li>
+							<li><a href="#">Troublesho</a></li>
+						</ul>
+					</li>
+					<li class="col-lg-4">
+						<a href="#">Support</a>
+						<div class="gr-footer-nav__line"></div>
+					</li>
+				</ul>
+			</div>
+			<div class="col-lg-3">
+				<div class="gr-contact-form-container">
+					<p>Contact form</p>
+					<form>
+						<div class="gr-footer-form-group form-group">
+							<input class="form-control" type="text" placeholder="Your Email">
+						</div>
+						<div class="gr-footer-form-group form-group">
+							<textarea class="form-control" placeholder="Message" rows="5"></textarea>
+						</div>
+						<div class="form-group">
+							<button class="btn btn-primary btn-lg col-lg-12" class="btn btn-primary btn-scroll-to" type="button">Send</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="gr-footer-copyright">
+	<div class="container">
+		Copyright © Yuri Selukoff, 2008-2015. All rights reserved.
+	</div>
+</div>
+<div class="gr-bg-menu"></div>
+<script src="js/jquery-1.11.2.min.js" type="text/javascript"></script>
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+<script src="js/device.min.js" type="text/javascript"></script>
+<script src="js/support-browser.js" type="text/javascript"></script>
+<script src="js/common.js" type="text/javascript"></script>
+</body>
+</html>
