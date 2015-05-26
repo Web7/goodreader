@@ -12,6 +12,7 @@
 	};
 
 	var classNames = {
+		navbarNav: 'navbar-nav',
 		textRight: 'text-right',
 
 		grUserManualMenu: 'gr-user-manual-menu',
@@ -62,7 +63,10 @@
 		$grTextHeight,
 		$grMobileMenu,
 		$body,
-		posGrUserManualMenu;
+		$navbarNav,
+		posGrUserManualMenu,
+
+		isShowMenu = false;
 
 	$(function(){
 		$grUserManualMenu = $(selectors.grUserManualMenu);
@@ -71,6 +75,7 @@
 		$grShowShortText = $(selectors.grShowShortText);
 		$grTextHeight = $(selectors.grTextHeight);
 		$grMobileMenu = $(selectors.grMobileMenu);
+		$navbarNav = $(selectors.navbarNav);
 		$body = $('body');
 
 		if ($grUserManualMenu.exists()) {
@@ -87,7 +92,14 @@
 		}
 
 		$grMobileMenu.on('click', function(){
-			$body.toggleClass(classNames.grOpenMenu);
+			if ($body.hasClass(classNames.grOpenMenu)) {
+				$navbarNav.slideUp(function(){
+					$body.toggleClass(classNames.grOpenMenu);
+				});
+			} else {
+				$body.toggleClass(classNames.grOpenMenu);
+				$navbarNav.slideDown();
+			}
 		});
 
 		gr.renderShowShortText();
@@ -117,6 +129,10 @@
 
 	$(window).on('resize', function(){
 		gr.renderShowShortText();
+		if ($(this).width() > 940) {
+			$body.removeClass(classNames.grOpenMenu);
+			$navbarNav.removeAttr('style');
+		}
 	});
 
 	gr.renderShowShortText = function() {
@@ -137,10 +153,10 @@
 						var _$this = $(this);
 						e.preventDefault();
 						if (!$this.hasClass(classNames.grShowFullText)) {
-							$this.animate({height: fullHeight}, 1000).addClass(classNames.grShowFullText);
+							$this.animate({height: fullHeight}, 400).addClass(classNames.grShowFullText);
 							_$this.find('a').text('Hide');
 						} else {
-							$this.animate({height: 125}, 1000).removeClass(classNames.grShowFullText);
+							$this.animate({height: 125}, 400).removeClass(classNames.grShowFullText);
 							_$this.find('a').text('...More');
 						}
 						return false;
