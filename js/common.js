@@ -108,18 +108,17 @@
 	$(document).on('scroll', function(){
 		if ($grUserManualMenu.exists()) {
 			var $this = $(this),
-				containerMenuHeight = $grUserManualMenu.find(selectors.grStopFind).height() - 120,
+				containerMenuHeight = $grUserManualMenu.find(selectors.grStopFind).height(),
 				thisScrollTop = $this.scrollTop();
-
-			if ((thisScrollTop - containerMenuHeight + $(window).height()) >= ($this.height() - 489)) {
+			if (($(document).height() - containerMenuHeight) <= (thisScrollTop + 489)) {
 				$grUserManualMenu.addClass(classNames.grPositionFooter);
 			} else {
 				$grUserManualMenu.removeClass(classNames.grPositionFooter);
-				if (thisScrollTop >= 107 && $grUserManualMenu.hasClass(classNames.grDefault)) {
+				if (thisScrollTop >= 79 && $grUserManualMenu.hasClass(classNames.grDefault)) {
 					var widthManualMenu = $grUserManualMenu.closest(selectors.grManualMenu).width();
 					$grUserManualMenu.removeClass(classNames.grDefault).addClass(classNames.grFixed).css({width: widthManualMenu});
 				}
-				if (thisScrollTop <= 107 && $grUserManualMenu.hasClass(classNames.grFixed)) {
+				if (thisScrollTop <= 79 && $grUserManualMenu.hasClass(classNames.grFixed)) {
 					$grUserManualMenu.removeClass(classNames.grFixed).addClass(classNames.grDefault).removeAttr('style');
 				}
 			}
