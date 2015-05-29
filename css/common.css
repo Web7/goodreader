@@ -64,9 +64,7 @@ textarea {resize: none;}
 
 select {-webkit-appearance: none; -moz-appearance: none; appearance: none; position: relative;}
 select option,
-select option.fa {padding-left: 27px; position: relative; display: block; width: 100%; color: #4e4e4e; font-family: "open_sansregular";}
-
-select option.fa[selected="selected"]:before {position: absolute; content: ""; left: 5px; top: 0; display: block;  color: #50aadf; font-family: FontAwesome;}
+select option.fa {display: block; width: 100%; color: #4e4e4e; font-family: "open_sansregular";}
 
 .gr-form-group-select {position: relative;}
 .gr-form-group-select > .fa {position: absolute; top: 2px; right: 15px; bottom: 0; line-height: 48px; cursor: default; z-index: 0; color: #50aadf;}
