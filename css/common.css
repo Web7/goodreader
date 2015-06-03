@@ -34,7 +34,7 @@ textarea {resize: none;}
 .has-error .form-control:focus,
 .has-error .form-control,
 .form-control:focus,
-.form-control {box-shadow: none;}
+.form-control {box-shadow: none; -moz-box-shadow: none; -webkit-box-shadow: none; -webkit-appearance: none; -moz-appearance: none; appearance: none;}
 
 .form-group {position: relative;}
 
